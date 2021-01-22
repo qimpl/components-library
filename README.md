@@ -24,7 +24,3 @@ class Example extends Component {
   }
 }
 ```
-
-## License
-
-MIT © [Thyrael](https://github.com/Thyrael)
