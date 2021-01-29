@@ -1,13 +1,12 @@
-# qimpl-components-library
+# Qimpl Components
 
-> Made with create-react-library
-
-[![NPM](https://img.shields.io/npm/v/qimpl-components-library.svg)](https://www.npmjs.com/package/qimpl-components-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/qimpl-components-library.svg)](https://www.npmjs.com/package/qimpl-components-library)
+[![JavaScript Style Guide](https://img.shields.io/badge/code%20style-airbnb-brightgreen.svg)](https://airbnb.io/javascript/)
 
 ## Install
 
 ```bash
-npm install --save qimpl-components-library
+npm install --save components-library
 ```
 
 ## Usage
@@ -15,8 +14,8 @@ npm install --save qimpl-components-library
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'qimpl-components-library'
-import 'qimpl-components-library/dist/index.css'
+import MyComponent from 'components-library'
+import 'components-library/dist/index.css'
 
 class Example extends Component {
   render() {
