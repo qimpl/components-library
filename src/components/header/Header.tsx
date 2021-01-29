@@ -1,10 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-import { Button } from './Button';
+import Button from '../button/Button';
+import HeaderProps from './header.d';
 import './header.css';
 
-export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
+const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps): React.ReactElement => (
   <header>
     <div className='wrapper'>
       <div>
@@ -31,13 +31,8 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
   </header>
 );
 
-Header.propTypes = {
-  user: PropTypes.shape({}),
-  onLogin: PropTypes.func.isRequired,
-  onLogout: PropTypes.func.isRequired,
-  onCreateAccount: PropTypes.func.isRequired,
-};
-
 Header.defaultProps = {
   user: null,
 };
+
+export default Header;
