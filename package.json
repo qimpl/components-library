@@ -1,9 +1,9 @@
 {
-  "name": "qimpl-components-library",
+  "name": "components-library",
   "version": "1.0.0",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
-  "source": "src/index.js",
+  "source": "src/web/index.tsx",
   "engines": {
     "node": ">=10"
   },
@@ -11,8 +11,8 @@
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
     "prepare": "run-s build",
-    "lint": "eslint --cache --ext .js,.jsx .",
-    "lint:fix": "eslint --cache --fix --ext .js,.jsx .",
+    "lint": "eslint --cache --ext .ts,.tsx .",
+    "lint:fix": "eslint --cache --fix --ext .ts,.tsx .",
     "prettier": "prettier --write .",
     "test": "run-s test:unit test:lint test:build",
     "test:build": "run-s build",
@@ -27,35 +27,36 @@
     "react": "^16.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "@qimpl/eslint-config": "^1.2.0",
     "@storybook/addon-actions": "^6.1.15",
     "@storybook/addon-essentials": "^6.1.15",
     "@storybook/addon-links": "^6.1.15",
     "@storybook/react": "^6.1.15",
-    "babel-eslint": "^10.0.3",
-    "babel-loader": "^8.2.2",
+    "@types/react": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.14.1",
+    "@typescript-eslint/parser": "^4.14.1",
+    "babel-eslint": "^10.1.0",
     "cross-env": "^7.0.2",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-config-standard-react": "^9.2.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.17.0",
-    "eslint-plugin-standard": "^4.0.1",
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx": "^0.1.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "gh-pages": "^2.2.0",
     "husky": "^4.3.8",
     "lint-staged": "^10.4.0",
     "microbundle-crl": "^0.13.10",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.0.4",
+    "prettier": "^2.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1"
+    "react-scripts": "^3.4.1",
+    "typescript": "^4.1.3"
   },
   "husky": {
     "hooks": {
@@ -64,8 +65,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx}": "eslint --fix",
-    "*.{js,jsx,html,md}": "prettier --write"
+    "*.{js,jsx,ts,tsx}": "eslint --fix",
+    "*.{js,jsx,ts,tsx,html,md}": "prettier --write"
   },
   "files": [
     "dist"
