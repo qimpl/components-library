@@ -1,9 +1,14 @@
 {
-  "parser": "@typescript-eslint/parser",
-  "extends": ["@qimpl/eslint-config/react", "plugin:import/typescript", "plugin:@typescript-eslint/recommended"],
+  "env": {
+    "jest": true
+  },
+  "extends": "@qimpl/eslint-config/react-typescript",
   "rules": {
     "no-use-before-define": "off",
     "react/jsx-props-no-spreading": "off",
     "@typescript-eslint/no-use-before-define": ["error"]
+  },
+  "parserOptions": {
+    "project": "tsconfig.json"
   }
 }

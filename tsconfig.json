@@ -15,8 +15,17 @@
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "checkJs": true,
+    "strict": true,
+    "target": "esnext",
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "alwaysStrict": true,
+    "pretty": true
   },
-  "include": ["src/web"],
-  "exclude": ["node_modules", "dist", "example"]
+  "include": ["**/src"],
+  "exclude": ["**/node_modules", "**/dist"]
 }
