@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "*": ["*"]
+    },
     "outDir": "dist",
     "module": "esnext",
     "lib": ["dom", "esnext"],
@@ -20,6 +24,7 @@
     "checkJs": true,
     "strict": true,
     "target": "esnext",
+    "skipLibCheck": true,
     "removeComments": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,

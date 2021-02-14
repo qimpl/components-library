@@ -4,9 +4,7 @@
   },
   "extends": "@qimpl/eslint-config/react-typescript",
   "rules": {
-    "no-use-before-define": "off",
-    "react/jsx-props-no-spreading": "off",
-    "@typescript-eslint/no-use-before-define": ["error"]
+    "react/jsx-props-no-spreading": "off"
   },
   "parserOptions": {
     "project": "tsconfig.json"
