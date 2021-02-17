@@ -14,9 +14,11 @@ type TextProps = {
 };
 
 type StyledTextProps = {
-  fontSize: string;
-  lineHeight: string;
-  textColor: string;
+  style: {
+    color: string;
+    lineHeight: string;
+    fontSize: string;
+  };
 };
 
 export { TextVariant, TextProps, StyledTextProps };

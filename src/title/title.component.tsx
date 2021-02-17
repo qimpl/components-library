@@ -2,7 +2,7 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import { Theme, ColorVariant } from 'theme/theme';
+import { ColorVariant, getColorString } from 'theme/theme';
 import { TitleVariant, TitleProps, StyledTitleProps } from 'title/title.d';
 
 const StyledTitle = styled.title`
@@ -18,11 +18,7 @@ const H3 = StyledTitle.withComponent('h3');
 const H4 = StyledTitle.withComponent('h4');
 
 const Title = ({ variant, children, color = ColorVariant.PRIMARY }: TitleProps): React.ReactElement => {
-  let titleColor;
-  if (color === ColorVariant.SECONDARY) titleColor = Theme.colors.secondary;
-  else if (color === ColorVariant.SUCCESS) titleColor = Theme.colors.success;
-  else if (color === ColorVariant.ERROR) titleColor = Theme.colors.error;
-  else titleColor = Theme.colors.primary;
+  const titleColor = getColorString(color);
 
   switch (variant) {
     case TitleVariant.H2:

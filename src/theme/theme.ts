@@ -16,4 +16,12 @@ enum ColorVariant {
   SUCCESS = 'SUCCESS',
 }
 
-export { Theme, ColorVariant };
+const getColorString = (givenColor: ColorVariant): string => {
+  if (givenColor === ColorVariant.SECONDARY) return Theme.colors.secondary;
+  if (givenColor === ColorVariant.SUCCESS) return Theme.colors.success;
+  if (givenColor === ColorVariant.ERROR) return Theme.colors.error;
+
+  return Theme.colors.primary;
+};
+
+export { Theme, ColorVariant, getColorString };
