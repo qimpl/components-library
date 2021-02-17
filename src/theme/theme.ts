@@ -6,6 +6,9 @@ const Theme: DefaultTheme = {
     secondary: 'rgba(1, 60, 99, 0.7)',
     error: 'rgba(255, 61, 61, 1)',
     success: 'rgba(55, 138, 66, 1)',
+    gray: 'rgba(67, 80, 88, 1)',
+    lightGray: 'rgba(67, 80, 88, 0.8)',
+    extraLightGray: 'rgba(241, 242, 238, 0.3)',
   },
 };
 
