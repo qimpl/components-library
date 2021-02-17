@@ -9,11 +9,4 @@ const Theme: DefaultTheme = {
   },
 };
 
-enum ColorVariant {
-  PRIMARY = 'PRIMARY',
-  SECONDARY = 'SECONDARY',
-  ERROR = 'ERROR',
-  SUCCESS = 'SUCCESS',
-}
-
-export { Theme, ColorVariant };
+export default Theme;

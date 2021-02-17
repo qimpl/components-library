@@ -1,5 +1,3 @@
-import { ColorVariant } from 'theme/theme';
-
 enum TitleVariant {
   H1 = 'H1',
   H2 = 'H2',
@@ -10,7 +8,7 @@ enum TitleVariant {
 type TitleProps = {
   variant: TitleVariant;
   children: React.ReactNode;
-  color?: ColorVariant;
+  color?: string;
 };
 
 type StyledTitleProps = {

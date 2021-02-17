@@ -2,9 +2,9 @@ import React from 'react';
 
 import { Story, Meta } from '@storybook/react/types-6-0';
 
-import Text from 'text/text.component';
-import { TextVariant, TextProps } from 'text/text.d';
-import { ColorVariant } from 'theme/theme';
+import Text from 'components/text/text.component';
+import { TextVariant, TextProps } from 'components/text/text.d';
+import Theme from 'theme/theme';
 
 export default {
   title: 'Qimpl/Text',
@@ -19,7 +19,7 @@ export default {
     color: {
       control: {
         type: 'select',
-        options: Object.keys(ColorVariant),
+        options: Object.keys(Theme.colors),
       },
     },
   },
@@ -34,26 +34,26 @@ export const LargeText = Template.bind({});
 LargeText.args = {
   variant: TextVariant.LARGE,
   children: textValue,
-  color: ColorVariant.PRIMARY,
+  color: Theme.colors.primary,
 };
 
 export const MediumText = Template.bind({});
 MediumText.args = {
   variant: TextVariant.MEDIUM,
   children: textValue,
-  color: ColorVariant.PRIMARY,
+  color: Theme.colors.primary,
 };
 
 export const SmallTextAndSecondaryColor = Template.bind({});
 SmallTextAndSecondaryColor.args = {
   variant: TextVariant.SMALL,
   children: textValue,
-  color: ColorVariant.SECONDARY,
+  color: Theme.colors.secondary,
 };
 
 export const ExtraSmallText = Template.bind({});
 ExtraSmallText.args = {
   variant: TextVariant.EXTRA_SMALL,
   children: textValue,
-  color: ColorVariant.PRIMARY,
+  color: Theme.colors.primary,
 };

@@ -1,5 +1,3 @@
-import { ColorVariant } from 'theme/theme';
-
 enum TextVariant {
   LARGE = 'LARGE',
   MEDIUM = 'MEDIUM',
@@ -10,13 +8,15 @@ enum TextVariant {
 type TextProps = {
   variant: TextVariant;
   children: React.ReactNode;
-  color?: ColorVariant;
+  color?: string;
 };
 
 type StyledTextProps = {
-  fontSize: string;
-  lineHeight: string;
-  textColor: string;
+  style: {
+    color: string;
+    lineHeight: string;
+    fontSize: string;
+  };
 };
 
 export { TextVariant, TextProps, StyledTextProps };
