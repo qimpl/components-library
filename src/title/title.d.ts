@@ -1,4 +1,4 @@
-import { ColorsProps, ColorVariant } from 'theme/colors';
+import { ColorVariant } from 'theme/theme';
 
 enum TitleVariant {
   H1 = 'H1',
@@ -15,7 +15,7 @@ type TitleProps = {
 
 type StyledTitleProps = {
   fontSize: string;
-  titleColor: ColorsProps;
+  titleColor: string;
 };
 
 export { TitleVariant, TitleProps, StyledTitleProps };

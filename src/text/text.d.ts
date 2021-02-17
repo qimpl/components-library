@@ -1,4 +1,4 @@
-import { ColorsProps, ColorVariant } from 'theme/colors';
+import { ColorVariant } from 'theme/theme';
 
 enum TextVariant {
   LARGE = 'LARGE',
@@ -16,7 +16,7 @@ type TextProps = {
 type StyledTextProps = {
   fontSize: string;
   lineHeight: string;
-  textColor: ColorsProps;
+  textColor: string;
 };
 
 export { TextVariant, TextProps, StyledTextProps };

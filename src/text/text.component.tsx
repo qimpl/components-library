@@ -3,18 +3,20 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { TextVariant, TextProps, StyledTextProps } from 'text/text.d';
-import { Colors, ColorVariant } from 'theme/colors';
+import { Theme, ColorVariant } from 'theme/theme';
 
 const StyledText = styled.p`
-  ${(props: StyledTextProps) => props.textColor};
+  color: ${(props: StyledTextProps) => props.textColor};
   font-size: ${(props: StyledTextProps) => props.fontSize};
   line-height: ${(props: StyledTextProps) => props.lineHeight};
 `;
 
 const Text = ({ variant, children, color = ColorVariant.PRIMARY }: TextProps): React.ReactElement => {
   let textColor;
-  if (color === ColorVariant.SECONDARY) textColor = Colors.Secondary;
-  else textColor = Colors.Primary;
+  if (color === ColorVariant.SECONDARY) textColor = Theme.colors.secondary;
+  else if (color === ColorVariant.SUCCESS) textColor = Theme.colors.success;
+  else if (color === ColorVariant.ERROR) textColor = Theme.colors.error;
+  else textColor = Theme.colors.primary;
 
   switch (variant) {
     case TextVariant.MEDIUM:

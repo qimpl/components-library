@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 
 import Text from 'text/text.component';
 import { TextVariant, TextProps } from 'text/text.d';
-import { ColorVariant } from 'theme/colors';
+import { ColorVariant } from 'theme/theme';
 
 export default {
   title: 'Qimpl/Text',
