@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Story, Meta } from '@storybook/react/types-6-0';
 
-import { ColorVariant } from 'theme/colors';
+import { ColorVariant } from 'theme/theme';
 import Title from 'title/title.component';
 import { TitleVariant, TitleProps } from 'title/title.d';
 
