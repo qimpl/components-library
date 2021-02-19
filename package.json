@@ -3,13 +3,16 @@
   "version": "0.0.1",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
-  "source": "src/web/index.tsx",
+  "source": "src/index.ts",
   "engines": {
     "node": ">=10"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/qimpl/components-library.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/qimpl"
   },
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs",

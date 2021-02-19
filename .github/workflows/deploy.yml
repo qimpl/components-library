@@ -1,8 +1,10 @@
 name: Deployment
 
 on:
-  release:
-    types: [created]
+  workflow_run:
+    workflows: ['Release a new version']
+    types:
+      - completed
 
 jobs:
   build:
@@ -13,8 +15,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '14.x'
-          registry-url: https://npm.pkg.github.com/
-          scope: '@qimpl'
       - name: Cache node modules
         uses: actions/cache@v1
         with:
@@ -25,6 +25,12 @@ jobs:
             ${{ runner.OS }}-build-
             ${{ runner.OS }}-
       - run: npm install
+      - run: npm run build
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+          registry-url: https://npm.pkg.github.com/
+          scope: '@qimpl'
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
