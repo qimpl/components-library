@@ -6,8 +6,8 @@ import { TitleVariant, TitleProps, StyledTitleProps } from 'components/title/tit
 import Theme from 'theme/theme';
 
 const StyledTitle = styled.title`
-  color: ${(props: StyledTitleProps) => props.titleColor};
-  font-size: ${(props: StyledTitleProps) => props.fontSize};
+  color: ${({ titleColor }: StyledTitleProps) => titleColor};
+  font-size: ${({ fontSize }: StyledTitleProps) => fontSize};
   font-weight: bold;
   line-height: 20px;
 `;

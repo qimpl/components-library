@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Story, Meta } from '@storybook/react/types-6-0';
 
-import Title from 'components/title/title.component';
+import Title from 'components/title/title';
 import { TitleVariant, TitleProps } from 'components/title/title.d';
 import Theme from 'theme/theme';
 
