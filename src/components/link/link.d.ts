@@ -3,7 +3,12 @@ type LinkProps = {
   title: string;
   children: React.ReactNode;
   target?: string;
-  color?: string;
+  linkStyle?: AnchorStyleProps;
 };
 
-export default LinkProps;
+type AnchorStyleProps = {
+  color: string;
+  hoverColor?: string;
+};
+
+export { AnchorStyleProps, LinkProps };
