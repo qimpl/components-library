@@ -23,7 +23,7 @@
     "allowJs": true,
     "checkJs": true,
     "strict": true,
-    "target": "esnext",
+    "target": "es2019",
     "skipLibCheck": true,
     "removeComments": true,
     "experimentalDecorators": true,
