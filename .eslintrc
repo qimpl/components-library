@@ -4,7 +4,8 @@
   },
   "extends": "@qimpl/eslint-config/react-typescript",
   "rules": {
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": ["**/*.test.tsx"] }]
   },
   "parserOptions": {
     "project": "tsconfig.json"
