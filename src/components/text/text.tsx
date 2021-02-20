@@ -6,9 +6,9 @@ import { TextVariant, TextProps, StyledTextProps } from 'components/text/text.d'
 import Theme from 'theme/theme';
 
 const StyledText = styled.p`
-  color: ${(props: StyledTextProps) => props.style.color};
-  font-size: ${(props: StyledTextProps) => props.style.fontSize};
-  line-height: ${(props: StyledTextProps) => props.style.lineHeight};
+  color: ${({ style }: StyledTextProps) => style.color};
+  font-size: ${({ style }: StyledTextProps) => style.fontSize};
+  line-height: ${({ style }: StyledTextProps) => style.lineHeight};
 `;
 
 const Text = ({ variant, children, color = Theme.colors.primary }: TextProps): React.ReactElement => {
