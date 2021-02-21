@@ -38,3 +38,13 @@ test('Outlined & disabled button with custom color', () => {
     )
   ).toMatchSnapshot();
 });
+
+test('Transparent button with custom color', () => {
+  expect(
+    render(
+      <Button handleClick={() => console.log('button click')} isTransparent color={Theme.colors.error}>
+        Primary button
+      </Button>
+    )
+  ).toMatchSnapshot();
+});

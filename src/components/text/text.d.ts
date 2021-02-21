@@ -1,4 +1,4 @@
-enum TextVariant {
+const enum TextVariant {
   LARGE = 'LARGE',
   MEDIUM = 'MEDIUM',
   SMALL = 'SMALL',

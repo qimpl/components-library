@@ -12,21 +12,21 @@ const Anchor = styled.a`
   text-decoration: none;
   transition: color ease-in-out 0.2s;
 
-  &:after {
-    content: '';
-    background-color: ${({ linkStyle }: LinkProps) => linkStyle?.color};
-    height: 1px;
-    width: 0;
+  &::after {
     display: block;
+    width: 0;
+    height: 1px;
+    background-color: ${({ linkStyle }: LinkProps) => linkStyle?.color};
     transition: all ease-in-out 0.2s;
+    content: '';
   }
 
   &:hover {
     color: ${({ linkStyle }: LinkProps) => linkStyle?.hoverColor};
 
     &::after {
-      background-color: ${({ linkStyle }: LinkProps) => linkStyle?.hoverColor};
       width: 100%;
+      background-color: ${({ linkStyle }: LinkProps) => linkStyle?.hoverColor};
     }
   }
 `;

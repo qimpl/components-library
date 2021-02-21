@@ -41,3 +41,10 @@ DisabledButton.args = {
   color: Theme.colors.primary,
   isDisabled: true,
 };
+
+export const TransparentButton = Template.bind({});
+TransparentButton.args = {
+  children: 'Button',
+  color: Theme.colors.success,
+  isTransparent: true,
+};
