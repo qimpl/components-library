@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { lighten } from 'polished';
+import { lighten, rgba } from 'polished';
 import styled from 'styled-components';
 
 import { ButtonProps, StyledButtonProps } from 'components/button/button.d';
@@ -12,13 +12,18 @@ const StyledButton = styled.button`
   border-radius: 50px;
   font-weight: bold;
   padding: 0 20px;
-  cursor: ${({ disabled }: StyledButtonProps) => (disabled ? 'not-allowed' : 'pointer')};
+  cursor: ${({ disabled }: StyledButtonProps) => (disabled ? 'default' : 'pointer')};
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all ease-in-out 0.2s;
-  border: 1px solid;
-  background-color: ${({ outlined, color }: StyledButtonProps) => (outlined ? 'transparent' : color)};
+  border: 1px solid transparent;
+  background-color: ${({ disabled, outlined, color }: StyledButtonProps) => {
+    if (outlined) return 'transparent';
+    if (disabled) return rgba(color, 0.7);
+
+    return color;
+  }};
 
   ${({ outlined, color }: StyledButtonProps) =>
     outlined

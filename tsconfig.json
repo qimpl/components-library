@@ -29,8 +29,7 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "alwaysStrict": true,
-    "pretty": true,
-    "isolatedModules": false
+    "pretty": true
   },
   "include": ["**/src"],
   "exclude": ["**/node_modules", "**/dist"]
