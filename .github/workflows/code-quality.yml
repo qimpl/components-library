@@ -27,9 +27,9 @@ jobs:
         env:
           CI: TRUE
       - name: Lint JavaScript code
-        run: npm run lint
+        run: npm run lint:js
       - name: Create Eslint Report
-        run: npm run lint:report
+        run: npm run lint:js:report
         continue-on-error: true
       - name: Annotate Code Linting Results
         uses: ataylorme/eslint-annotate-action@1.1.2
