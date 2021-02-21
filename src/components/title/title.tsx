@@ -7,8 +7,8 @@ import Theme from 'theme/theme';
 
 const StyledTitle = styled.title`
   color: ${({ titleColor }: StyledTitleProps) => titleColor};
-  font-size: ${({ fontSize }: StyledTitleProps) => fontSize};
   font-weight: bold;
+  font-size: ${({ fontSize }: StyledTitleProps) => fontSize};
   line-height: 20px;
 `;
 
