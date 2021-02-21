@@ -1,37 +1,47 @@
 import React from 'react';
 
-import { lighten } from 'polished';
+import { lighten, rgba } from 'polished';
 import styled from 'styled-components';
 
 import { ButtonProps, StyledButtonProps } from 'components/button/button.d';
 import Theme from 'theme/theme';
 
 const StyledButton = styled.button`
-  width: 100%;
-  height: 54px;
-  border-radius: 50px;
-  font-weight: bold;
-  padding: 0 20px;
-  cursor: ${({ disabled }: StyledButtonProps) => (disabled ? 'not-allowed' : 'pointer')};
   display: flex;
-  justify-content: center;
   align-items: center;
-  transition: all ease-in-out 0.2s;
-  border: 1px solid;
-  background-color: ${({ outlined, color }: StyledButtonProps) => (outlined ? 'transparent' : color)};
+  justify-content: center;
+  width: 100%;
+  padding: ${({ transparent }: StyledButtonProps) => (transparent ? '0' : '20px 20px')};
+  font-weight: bold;
+  background-color: ${({ disabled, outlined, transparent, color }: StyledButtonProps) => {
+    if (outlined || transparent) return 'transparent';
+    if (disabled) return rgba(color, 0.7);
 
-  ${({ outlined, color }: StyledButtonProps) =>
+    return color;
+  }};
+  border: 1px solid transparent;
+  border-radius: 50px;
+  cursor: ${({ disabled }: StyledButtonProps) => (disabled ? 'default' : 'pointer')};
+  transition: all ease-in-out 0.2s;
+  ${({ outlined, transparent, color }: StyledButtonProps) =>
     outlined
       ? `
         border-color: ${color};
         color: ${color};
       `
       : `
-        color: white;
+        color: ${transparent ? color : 'white'};
   `}
-
-  ${({ disabled, outlined, color }: StyledButtonProps) =>
+  ${({ transparent, color }: StyledButtonProps) =>
+    transparent &&
+    `
+      &:hover {
+        color: ${lighten(0.1, color)};
+      }
+  `}
+  ${({ disabled, outlined, transparent, color }: StyledButtonProps) =>
     !disabled &&
+    !transparent &&
     `
       &:hover {
         background-color: ${outlined ? color : lighten(0.1, color)};
@@ -46,9 +56,17 @@ const Button = ({
   isDisabled = false,
   color = Theme.colors.primary,
   isOutlined = false,
+  isTransparent = false,
 }: ButtonProps): React.ReactElement => {
   return (
-    <StyledButton onClick={handleClick} disabled={isDisabled} type='button' color={color} outlined={isOutlined}>
+    <StyledButton
+      onClick={handleClick}
+      disabled={isDisabled}
+      transparent={isTransparent}
+      type='button'
+      color={color}
+      outlined={isOutlined}
+    >
       {children}
     </StyledButton>
   );

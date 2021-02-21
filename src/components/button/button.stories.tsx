@@ -4,8 +4,6 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 
 import Button from 'components/button/button';
 import { ButtonProps } from 'components/button/button.d';
-import Text from 'components/text/text.component';
-import { TextVariant } from 'components/text/text.d';
 import Theme from 'theme/theme';
 
 export default {
@@ -42,4 +40,11 @@ DisabledButton.args = {
   children: 'Button',
   color: Theme.colors.primary,
   isDisabled: true,
+};
+
+export const TransparentButton = Template.bind({});
+TransparentButton.args = {
+  children: 'Button',
+  color: Theme.colors.success,
+  isTransparent: true,
 };

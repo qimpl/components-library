@@ -6,13 +6,13 @@ import Button from 'components/button/button';
 import Theme from 'theme/theme';
 
 test('Primary button with default color', () => {
-  expect(render(<Button handleClick={() => console.log('button click')}>Primary button</Button>)).toMatchSnapshot();
+  expect(render(<Button handleClick={() => 'button click'}>Primary button</Button>)).toMatchSnapshot();
 });
 
 test('Outlined button with custom color', () => {
   expect(
     render(
-      <Button handleClick={() => console.log('button click')} isOutlined color={Theme.colors.secondary}>
+      <Button handleClick={() => 'button click'} isOutlined color={Theme.colors.secondary}>
         Primary button
       </Button>
     )
@@ -22,7 +22,7 @@ test('Outlined button with custom color', () => {
 test('Disabled button with custom color', () => {
   expect(
     render(
-      <Button handleClick={() => console.log('button click')} isDisabled color={Theme.colors.error}>
+      <Button handleClick={() => 'button click'} isDisabled color={Theme.colors.error}>
         Primary button
       </Button>
     )
@@ -33,6 +33,16 @@ test('Outlined & disabled button with custom color', () => {
   expect(
     render(
       <Button handleClick={() => console.log('button click')} isOutlined isDisabled color={Theme.colors.error}>
+        Primary button
+      </Button>
+    )
+  ).toMatchSnapshot();
+});
+
+test('Transparent button with custom color', () => {
+  expect(
+    render(
+      <Button handleClick={() => console.log('button click')} isTransparent color={Theme.colors.error}>
         Primary button
       </Button>
     )

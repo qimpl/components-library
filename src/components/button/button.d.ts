@@ -4,6 +4,7 @@ type StyledButtonProps = {
   color: string;
   outlined: boolean;
   disabled: boolean;
+  transparent: boolean;
 };
 
 type ButtonProps = {
@@ -12,6 +13,7 @@ type ButtonProps = {
   color?: string;
   isDisabled?: boolean;
   isOutlined?: boolean;
+  isTransparent?: boolean;
 };
 
 export { ButtonProps, StyledButtonProps };

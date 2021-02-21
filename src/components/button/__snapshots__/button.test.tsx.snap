@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="sc-bdfBwQ jjIUQe"
+        class="sc-bdfBwQ iXNeEk"
         color="#ff3d3d"
         disabled=""
         type="button"
@@ -17,7 +17,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="sc-bdfBwQ jjIUQe"
+      class="sc-bdfBwQ iXNeEk"
       color="#ff3d3d"
       disabled=""
       type="button"
@@ -85,7 +85,7 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="sc-bdfBwQ sFBTf"
+        class="sc-bdfBwQ kkGSHa"
         color="#ff3d3d"
         disabled=""
         type="button"
@@ -96,7 +96,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="sc-bdfBwQ sFBTf"
+      class="sc-bdfBwQ kkGSHa"
       color="#ff3d3d"
       disabled=""
       type="button"
@@ -164,8 +164,8 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="sc-bdfBwQ kBifUn"
-        color="rgba(1,60,99,0.7)"
+        class="sc-bdfBwQ gZjmMT"
+        color="#0189e5"
         type="button"
       >
         Primary button
@@ -174,8 +174,8 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="sc-bdfBwQ kBifUn"
-      color="rgba(1,60,99,0.7)"
+      class="sc-bdfBwQ gZjmMT"
+      color="#0189e5"
       type="button"
     >
       Primary button
@@ -241,7 +241,7 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="sc-bdfBwQ kCCQkd"
+        class="sc-bdfBwQ cQOunj"
         color="#013c63"
         type="button"
       >
@@ -251,7 +251,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="sc-bdfBwQ kCCQkd"
+      class="sc-bdfBwQ cQOunj"
       color="#013c63"
       type="button"
     >
