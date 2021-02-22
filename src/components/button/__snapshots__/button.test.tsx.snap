@@ -1,25 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`H1 with default color 1`] = `
+exports[`Disabled button with custom color 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <h1
-        class="sc-gsTCUz fKAvmk"
-        font-size="20px"
+      <button
+        class="sc-bdfBwQ dINZGQ"
+        color="#ff3d3d"
+        disabled=""
+        type="button"
       >
-        H1 Title
-      </h1>
+        Primary button
+      </button>
     </div>
   </body>,
   "container": <div>
-    <h1
-      class="sc-gsTCUz fKAvmk"
-      font-size="20px"
+    <button
+      class="sc-bdfBwQ dINZGQ"
+      color="#ff3d3d"
+      disabled=""
+      type="button"
     >
-      H1 Title
-    </h1>
+      Primary button
+    </button>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -75,26 +79,30 @@ Object {
 }
 `;
 
-exports[`H2 with custom color 1`] = `
+exports[`Outlined & disabled button with custom color 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <h2
-        class="sc-dlfnbm bA-dKTv"
-        font-size="18px"
+      <button
+        class="sc-bdfBwQ gExpyn"
+        color="#ff3d3d"
+        disabled=""
+        type="button"
       >
-        H2 Title
-      </h2>
+        Primary button
+      </button>
     </div>
   </body>,
   "container": <div>
-    <h2
-      class="sc-dlfnbm bA-dKTv"
-      font-size="18px"
+    <button
+      class="sc-bdfBwQ gExpyn"
+      color="#ff3d3d"
+      disabled=""
+      type="button"
     >
-      H2 Title
-    </h2>
+      Primary button
+    </button>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -150,26 +158,28 @@ Object {
 }
 `;
 
-exports[`H3 with default color 1`] = `
+exports[`Outlined button with custom color 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <h3
-        class="sc-hKgILt eXHKDY"
-        font-size="16px"
+      <button
+        class="sc-bdfBwQ lircRc"
+        color="#0189e5"
+        type="button"
       >
-        H3 Title
-      </h3>
+        Primary button
+      </button>
     </div>
   </body>,
   "container": <div>
-    <h3
-      class="sc-hKgILt eXHKDY"
-      font-size="16px"
+    <button
+      class="sc-bdfBwQ lircRc"
+      color="#0189e5"
+      type="button"
     >
-      H3 Title
-    </h3>
+      Primary button
+    </button>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -225,26 +235,105 @@ Object {
 }
 `;
 
-exports[`H4 with default color 1`] = `
+exports[`Primary button with default color 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <h4
-        class="sc-eCssSg dlfAEB"
-        font-size="14px"
+      <button
+        class="sc-bdfBwQ kIZVjJ"
+        color="#013c63"
+        type="button"
       >
-        H4 Title
-      </h4>
+        Primary button
+      </button>
     </div>
   </body>,
   "container": <div>
-    <h4
-      class="sc-eCssSg dlfAEB"
-      font-size="14px"
+    <button
+      class="sc-bdfBwQ kIZVjJ"
+      color="#013c63"
+      type="button"
     >
-      H4 Title
-    </h4>
+      Primary button
+    </button>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Transparent button with custom color 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <button
+        class="sc-bdfBwQ gEzJvi"
+        color="#ff3d3d"
+        type="button"
+      >
+        Primary button
+      </button>
+    </div>
+  </body>,
+  "container": <div>
+    <button
+      class="sc-bdfBwQ gEzJvi"
+      color="#ff3d3d"
+      type="button"
+    >
+      Primary button
+    </button>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
