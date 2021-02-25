@@ -1,6 +1,6 @@
-import Button from 'components/button/button';
-import Link from 'components/link/link';
-import Text from 'components/text/text';
-import Title from 'components/title/title';
+import Anchor from './anchor/anchor';
+import Button from './button/button';
+import Text from './text/text';
+import Title from './title/title';
 
-export { Link, Text, Title, Button };
+export { Anchor, Text, Title, Button };

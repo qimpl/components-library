@@ -2,35 +2,34 @@ import React from 'react';
 
 import { Story, Meta } from '@storybook/react/types-6-0';
 
-import Link from 'components/link/link';
-import { LinkProps } from 'components/link/link.d';
+import Anchor, { AnchorProps } from 'components/anchor/anchor';
 import Theme from 'theme/theme';
 
 export default {
-  title: 'Qimpl/Link',
-  component: Link,
+  title: 'Qimpl/Anchor',
+  component: Anchor,
 } as Meta;
 
-const Template: Story<LinkProps> = (args) => (
+const Template: Story<AnchorProps> = (args) => (
   <div style={{ width: 'max-content' }}>
-    <Link {...args} />
+    <Anchor {...args} />
   </div>
 );
 
-export const DefaultLink = Template.bind({});
-DefaultLink.args = {
+export const DefaultAnchor = Template.bind({});
+DefaultAnchor.args = {
   href: 'https://google.com',
   title: 'Go to Google',
   children: 'default link',
   target: '_blank',
 };
 
-export const CustomColorsLink = Template.bind({});
-CustomColorsLink.args = {
+export const CustomColorsAnchor = Template.bind({});
+CustomColorsAnchor.args = {
   href: 'https://google.com',
   title: 'Go to Google',
   children: 'custom colors link',
-  linkStyle: {
+  anchorStyle: {
     color: Theme.colors.lightGray,
     hoverColor: Theme.colors.gray,
   },

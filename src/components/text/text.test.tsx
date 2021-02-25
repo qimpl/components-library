@@ -2,8 +2,7 @@ import React from 'react';
 
 import { render } from '@testing-library/react';
 
-import Text from 'components/text/text';
-import { TextVariant } from 'components/text/text.d';
+import Text, { TextVariant } from 'components/text/text';
 import Theme from 'theme/theme';
 
 test('Large text with default color', () => {

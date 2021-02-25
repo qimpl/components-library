@@ -2,8 +2,7 @@ import React from 'react';
 
 import { render } from '@testing-library/react';
 
-import Title from 'components/title/title';
-import { TitleVariant } from 'components/title/title.d';
+import Title, { TitleVariant } from 'components/title/title';
 import Theme from 'theme/theme';
 
 test('H1 with default color', () => {
