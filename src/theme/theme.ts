@@ -1,6 +1,20 @@
 import { rgba } from 'polished';
 import { DefaultTheme } from 'styled-components';
 
+declare module 'styled-components' {
+  export interface DefaultTheme {
+    colors: {
+      primary: string;
+      secondary: string;
+      error: string;
+      success: string;
+      gray: string;
+      lightGray: string;
+      extraLightGray: string;
+    };
+  }
+}
+
 const Theme: DefaultTheme = {
   colors: {
     primary: rgba(1, 60, 99, 1),

@@ -41,3 +41,13 @@ test('Link with blank target', () => {
     )
   ).toMatchSnapshot();
 });
+
+test('Link without underline', () => {
+  expect(
+    render(
+      <Anchor title='No underline link title' noUnderline>
+        No underline link
+      </Anchor>
+    )
+  ).toMatchSnapshot();
+});

@@ -34,3 +34,10 @@ CustomColorsAnchor.args = {
     hoverColor: Theme.colors.gray,
   },
 };
+
+export const NoUnderlineAnchor = Template.bind({});
+NoUnderlineAnchor.args = {
+  title: 'Go to Google',
+  children: 'no underline link',
+  noUnderline: true,
+};
