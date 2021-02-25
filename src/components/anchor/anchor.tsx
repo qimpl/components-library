@@ -11,6 +11,7 @@ type AnchorProps = {
   href?: string;
   target?: string;
   anchorStyle?: AnchorStyleProps;
+  noUnderline?: boolean;
 };
 
 type AnchorStyleProps = {
@@ -25,7 +26,7 @@ const A = styled.a`
   transition: color ease-in-out 0.2s;
 
   &::after {
-    display: block;
+    display: ${({ noUnderline }: AnchorProps) => (noUnderline ? 'none' : 'block')};
     width: 0;
     height: 1px;
     background-color: ${({ anchorStyle }: AnchorProps) => anchorStyle?.color};
@@ -52,8 +53,9 @@ const Anchor = ({
     color: Theme.colors.primary,
     hoverColor: darken(0.1, Theme.colors.primary),
   },
+  noUnderline = false,
 }: AnchorProps): React.ReactElement => (
-  <A href={href} title={title} target={target} anchorStyle={anchorStyle}>
+  <A href={href} title={title} target={target} anchorStyle={anchorStyle} noUnderline={noUnderline}>
     {children}
   </A>
 );
@@ -65,6 +67,7 @@ Anchor.defaultProps = {
     color: Theme.colors.primary,
     hoverColor: darken(0.1, Theme.colors.primary),
   },
+  noUnderline: false,
 };
 
 export default Anchor;

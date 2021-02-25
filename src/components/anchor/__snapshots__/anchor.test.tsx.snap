@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <a
-        class="sc-bdfBwQ gGyxRJ"
+        class="sc-bdfBwQ eOvpDJ"
         href="https://google.com"
         target="_blank"
         title="Go to Google"
@@ -17,7 +17,7 @@ Object {
   </body>,
   "container": <div>
     <a
-      class="sc-bdfBwQ gGyxRJ"
+      class="sc-bdfBwQ eOvpDJ"
       href="https://google.com"
       target="_blank"
       title="Go to Google"
@@ -85,7 +85,7 @@ Object {
   "baseElement": <body>
     <div>
       <a
-        class="sc-bdfBwQ ezbxRJ"
+        class="sc-bdfBwQ biEYmh"
         href="https://google.com"
         target="_self"
         title="Go to Google"
@@ -96,7 +96,7 @@ Object {
   </body>,
   "container": <div>
     <a
-      class="sc-bdfBwQ ezbxRJ"
+      class="sc-bdfBwQ biEYmh"
       href="https://google.com"
       target="_self"
       title="Go to Google"
@@ -164,7 +164,7 @@ Object {
   "baseElement": <body>
     <div>
       <a
-        class="sc-bdfBwQ gGyxRJ"
+        class="sc-bdfBwQ eOvpDJ"
         href="https://google.com"
         target="_self"
         title="Go to Google"
@@ -175,12 +175,91 @@ Object {
   </body>,
   "container": <div>
     <a
-      class="sc-bdfBwQ gGyxRJ"
+      class="sc-bdfBwQ eOvpDJ"
       href="https://google.com"
       target="_self"
       title="Go to Google"
     >
       Default colors link
+    </a>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Link without underline 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <a
+        class="sc-bdfBwQ cXxgvW"
+        href="#"
+        target="_self"
+        title="No underline link title"
+      >
+        No underline link
+      </a>
+    </div>
+  </body>,
+  "container": <div>
+    <a
+      class="sc-bdfBwQ cXxgvW"
+      href="#"
+      target="_self"
+      title="No underline link title"
+    >
+      No underline link
     </a>
   </div>,
   "debug": [Function],
