@@ -2,8 +2,28 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import { TextVariant, TextProps, StyledTextProps } from 'components/text/text.d';
 import Theme from 'theme/theme';
+
+enum TextVariant {
+  LARGE = 'LARGE',
+  MEDIUM = 'MEDIUM',
+  SMALL = 'SMALL',
+  EXTRA_SMALL = 'EXTRA_SMALL',
+}
+
+type TextProps = {
+  variant: TextVariant;
+  children: React.ReactNode;
+  color?: string;
+};
+
+type StyledTextProps = {
+  style: {
+    color: string;
+    lineHeight: string;
+    fontSize: string;
+  };
+};
 
 const StyledText = styled.p`
   color: ${({ style }: StyledTextProps) => style.color};
@@ -32,4 +52,9 @@ const Text = ({ variant, children, color = Theme.colors.primary }: TextProps): R
   return <StyledText style={textStyle}>{children}</StyledText>;
 };
 
+Text.defaultProps = {
+  color: Theme.colors.primary,
+};
+
 export default Text;
+export { TextVariant, TextProps };

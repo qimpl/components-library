@@ -3,13 +3,28 @@ import React from 'react';
 import { lighten, rgba } from 'polished';
 import styled from 'styled-components';
 
-import { ButtonProps, StyledButtonProps } from 'components/button/button.d';
 import Theme from 'theme/theme';
+
+type ButtonProps = {
+  children: React.ReactNode | React.ReactElement | string;
+  handleClick: React.MouseEventHandler | React.ReactEventHandler;
+  color?: string;
+  isDisabled?: boolean;
+  isOutlined?: boolean;
+  isTransparent?: boolean;
+};
+
+type StyledButtonProps = {
+  color: string;
+  outlined: boolean;
+  disabled: boolean;
+  transparent: boolean;
+};
 
 const StyledButton = styled.button`
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 100%;
   padding: ${({ transparent }: StyledButtonProps) => (transparent ? '0' : '20px 20px')};
   color: ${({ color, outlined, transparent }: StyledButtonProps) => (transparent || outlined ? color : 'white')};
@@ -43,8 +58,8 @@ const StyledButton = styled.button`
 const Button = ({
   children,
   handleClick,
-  isDisabled = false,
   color = Theme.colors.primary,
+  isDisabled = false,
   isOutlined = false,
   isTransparent = false,
 }: ButtonProps): React.ReactElement => {
@@ -62,4 +77,12 @@ const Button = ({
   );
 };
 
+Button.defaultProps = {
+  color: Theme.colors.primary,
+  isDisabled: false,
+  isOutlined: false,
+  isTransparent: false,
+};
+
 export default Button;
+export { ButtonProps };

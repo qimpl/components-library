@@ -2,8 +2,7 @@ import React from 'react';
 
 import { Story, Meta } from '@storybook/react/types-6-0';
 
-import Title from 'components/title/title';
-import { TitleVariant, TitleProps } from 'components/title/title.d';
+import Title, { TitleVariant, TitleProps } from 'components/title/title';
 import Theme from 'theme/theme';
 
 export default {

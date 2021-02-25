@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="sc-bdfBwQ dINZGQ"
+        class="sc-bdfBwQ flrKXM"
         color="#ff3d3d"
         disabled=""
         type="button"
@@ -17,7 +17,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="sc-bdfBwQ dINZGQ"
+      class="sc-bdfBwQ flrKXM"
       color="#ff3d3d"
       disabled=""
       type="button"
@@ -85,7 +85,7 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="sc-bdfBwQ gExpyn"
+        class="sc-bdfBwQ gDKgpX"
         color="#ff3d3d"
         disabled=""
         type="button"
@@ -96,7 +96,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="sc-bdfBwQ gExpyn"
+      class="sc-bdfBwQ gDKgpX"
       color="#ff3d3d"
       disabled=""
       type="button"
@@ -164,7 +164,7 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="sc-bdfBwQ lircRc"
+        class="sc-bdfBwQ hAUNYg"
         color="#0189e5"
         type="button"
       >
@@ -174,7 +174,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="sc-bdfBwQ lircRc"
+      class="sc-bdfBwQ hAUNYg"
       color="#0189e5"
       type="button"
     >
@@ -241,7 +241,7 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="sc-bdfBwQ kIZVjJ"
+        class="sc-bdfBwQ bucMHt"
         color="#013c63"
         type="button"
       >
@@ -251,7 +251,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="sc-bdfBwQ kIZVjJ"
+      class="sc-bdfBwQ bucMHt"
       color="#013c63"
       type="button"
     >
@@ -318,7 +318,7 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="sc-bdfBwQ gEzJvi"
+        class="sc-bdfBwQ gUJgwK"
         color="#ff3d3d"
         type="button"
       >
@@ -328,7 +328,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="sc-bdfBwQ gEzJvi"
+      class="sc-bdfBwQ gUJgwK"
       color="#ff3d3d"
       type="button"
     >

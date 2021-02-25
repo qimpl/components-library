@@ -32,7 +32,7 @@ test('Disabled button with custom color', () => {
 test('Outlined & disabled button with custom color', () => {
   expect(
     render(
-      <Button handleClick={() => console.log('button click')} isOutlined isDisabled color={Theme.colors.error}>
+      <Button handleClick={() => 'button click'} isOutlined isDisabled color={Theme.colors.error}>
         Primary button
       </Button>
     )
@@ -42,7 +42,7 @@ test('Outlined & disabled button with custom color', () => {
 test('Transparent button with custom color', () => {
   expect(
     render(
-      <Button handleClick={() => console.log('button click')} isTransparent color={Theme.colors.error}>
+      <Button handleClick={() => 'button click'} isTransparent color={Theme.colors.error}>
         Primary button
       </Button>
     )

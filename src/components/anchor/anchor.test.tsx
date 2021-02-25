@@ -2,15 +2,15 @@ import React from 'react';
 
 import { render } from '@testing-library/react';
 
-import Link from 'components/link/link';
+import Anchor from 'components/anchor/anchor';
 import Theme from 'theme/theme';
 
 test('Link with default colors', () => {
   expect(
     render(
-      <Link href='https://google.com' title='Go to Google'>
+      <Anchor href='https://google.com' title='Go to Google'>
         Default colors link
-      </Link>
+      </Anchor>
     )
   ).toMatchSnapshot();
 });
@@ -18,16 +18,16 @@ test('Link with default colors', () => {
 test('Link with custom colors', () => {
   expect(
     render(
-      <Link
+      <Anchor
         href='https://google.com'
         title='Go to Google'
-        linkStyle={{
+        anchorStyle={{
           color: Theme.colors.lightGray,
           hoverColor: Theme.colors.gray,
         }}
       >
         Custom colors link
-      </Link>
+      </Anchor>
     )
   ).toMatchSnapshot();
 });
@@ -35,9 +35,9 @@ test('Link with custom colors', () => {
 test('Link with blank target', () => {
   expect(
     render(
-      <Link href='https://google.com' title='Go to Google' target='_blank'>
+      <Anchor href='https://google.com' title='Go to Google' target='_blank'>
         Target blank link
-      </Link>
+      </Anchor>
     )
   ).toMatchSnapshot();
 });

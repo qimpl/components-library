@@ -1,0 +1,14 @@
+.storybook
+.github
+.editorconfig
+node_modules
+src
+.eslint*
+.gitignore
+.prettier*
+.stylelintrc.json
+commitlint.config.json
+jest.config.json
+package-lock.json
+tsconfig.json
+tsconfig.*.json

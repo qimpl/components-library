@@ -2,8 +2,25 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import { TitleVariant, TitleProps, StyledTitleProps } from 'components/title/title.d';
 import Theme from 'theme/theme';
+
+enum TitleVariant {
+  H1 = 'H1',
+  H2 = 'H2',
+  H3 = 'H3',
+  H4 = 'H4',
+}
+
+type TitleProps = {
+  variant: TitleVariant;
+  children: React.ReactNode;
+  color?: string;
+};
+
+type StyledTitleProps = {
+  fontSize: string;
+  titleColor: string;
+};
 
 const StyledTitle = styled.title`
   color: ${({ titleColor }: StyledTitleProps) => titleColor};
@@ -49,4 +66,9 @@ const Title = ({ variant, children, color = Theme.colors.primary }: TitleProps):
   );
 };
 
+Title.defaultProps = {
+  color: Theme.colors.primary,
+};
+
 export default Title;
+export { TitleVariant, TitleProps };
