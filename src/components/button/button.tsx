@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
 import { lighten, rgba } from 'polished';
 import styled from 'styled-components';
@@ -26,7 +26,7 @@ const StyledButton = styled.button`
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: ${({ transparent }: StyledButtonProps) => (transparent ? '0' : '20px 20px')};
+  padding: ${({ transparent }: StyledButtonProps) => (transparent ? 0 : '5px 10px')};
   color: ${({ color, outlined, transparent }: StyledButtonProps) => (transparent || outlined ? color : 'white')};
   font-weight: bold;
   background-color: ${({ disabled, outlined, transparent, color }: StyledButtonProps): string => {
@@ -37,6 +37,7 @@ const StyledButton = styled.button`
   }};
   border: ${({ outlined, color }: StyledButtonProps) => `1px solid ${outlined ? color : 'transparent'}`};
   border-radius: 50px;
+  outline: none;
   cursor: ${({ disabled }: StyledButtonProps) => (disabled ? 'default' : 'pointer')};
   transition: all ease-in-out 0.2s;
 
@@ -55,15 +56,18 @@ const StyledButton = styled.button`
   }
 `;
 
-const Button = ({
-  children,
-  handleClick,
-  color = Theme.colors.primary,
-  isDisabled = false,
-  isOutlined = false,
-  isTransparent = false,
-}: ButtonProps): React.ReactElement => {
-  return (
+const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+  (
+    {
+      children,
+      handleClick,
+      color = Theme.colors.primary,
+      isDisabled = false,
+      isOutlined = false,
+      isTransparent = false,
+    },
+    ref
+  ) => (
     <StyledButton
       onClick={handleClick}
       disabled={isDisabled}
@@ -71,18 +75,14 @@ const Button = ({
       type='button'
       color={color}
       outlined={isOutlined}
+      ref={ref}
     >
       {children}
     </StyledButton>
-  );
-};
+  )
+);
 
-Button.defaultProps = {
-  color: Theme.colors.primary,
-  isDisabled: false,
-  isOutlined: false,
-  isTransparent: false,
-};
+Button.displayName = 'Button';
 
 export default Button;
 export { ButtonProps };

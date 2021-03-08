@@ -81,7 +81,7 @@ Object {
   "baseElement": <body>
     <div>
       <h2
-        class="sc-dlfnbm bA-dKTv"
+        class="sc-dlfnbm dHiDOr"
         font-size="18px"
       >
         H2 Title
@@ -90,7 +90,7 @@ Object {
   </body>,
   "container": <div>
     <h2
-      class="sc-dlfnbm bA-dKTv"
+      class="sc-dlfnbm dHiDOr"
       font-size="18px"
     >
       H2 Title
