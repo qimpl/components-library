@@ -8,17 +8,45 @@
 npm install --save components-library
 ```
 
+## Components
+
+- Anchor
+- Button
+- Text
+- Title
+
 ## Usage
 
+JavaScript :
+
 ```jsx
-import React, { Component } from 'react';
+import React from 'react';
 
-import MyComponent from 'components-library';
-import 'components-library/dist/index.css';
+import { Button, Theme } from '@qimpl/components-library';
 
-class Example extends Component {
-  render() {
-    return <MyComponent />;
-  }
-}
+const Example = () => (
+  <Button handleClick={() => console.log('clicked')} color={Theme.colors.primary}>
+    My button
+  </Button>
+);
+
+export default Example;
+```
+
+TypeScript :
+
+```tsx
+import React from 'react';
+
+// Components props type can be imported
+// import { ButtonProps } from '@qimpl/components-library';
+import { Button, Theme } from '@qimpl/components-library';
+
+const Example = (): React.ReactElement => (
+  <Button handleClick={() => console.log('clicked')} color={Theme.colors.primary}>
+    My button
+  </Button>
+);
+
+export default Example;
 ```
