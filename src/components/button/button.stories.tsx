@@ -47,3 +47,9 @@ TransparentButton.args = {
   color: Theme.colors.success,
   isTransparent: true,
 };
+
+export const SmallButton = Template.bind({});
+SmallButton.args = {
+  children: 'Button',
+  isSmall: true,
+};
