@@ -6,6 +6,8 @@ export {
   AnchorProps,
   Button,
   ButtonProps,
+  Input,
+  InputProps,
   Menu,
   MenuProps,
   MenuItem,
