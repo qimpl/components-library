@@ -7,11 +7,13 @@ import Theme from 'theme/theme';
 
 type ButtonProps = {
   children: React.ReactNode | React.ReactElement | string;
-  handleClick: React.MouseEventHandler | React.ReactEventHandler;
+  handleClick?: React.MouseEventHandler | React.ReactEventHandler | undefined;
+  type?: 'button' | 'submit' | 'reset';
   color?: string;
   isDisabled?: boolean;
   isOutlined?: boolean;
   isTransparent?: boolean;
+  isSmall?: boolean;
 };
 
 type StyledButtonProps = {
@@ -19,6 +21,7 @@ type StyledButtonProps = {
   outlined: boolean;
   disabled: boolean;
   transparent: boolean;
+  small: boolean;
 };
 
 const StyledButton = styled.button`
@@ -26,7 +29,12 @@ const StyledButton = styled.button`
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: ${({ transparent }: StyledButtonProps) => (transparent ? 0 : '5px 10px')};
+  padding: ${({ transparent, small }: StyledButtonProps) => {
+    if (transparent) return 0;
+    if (small) return '5px 10px';
+
+    return '13px 10px';
+  }};
   color: ${({ color, outlined, transparent }: StyledButtonProps) => (transparent || outlined ? color : 'white')};
   font-weight: bold;
   background-color: ${({ disabled, outlined, transparent, color }: StyledButtonProps): string => {
@@ -60,11 +68,13 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {
       children,
-      handleClick,
+      handleClick = undefined,
+      type = 'button',
       color = Theme.colors.primary,
       isDisabled = false,
       isOutlined = false,
       isTransparent = false,
+      isSmall = false,
     },
     ref
   ) => (
@@ -72,10 +82,11 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       onClick={handleClick}
       disabled={isDisabled}
       transparent={isTransparent}
-      type='button'
+      type={type}
       color={color}
       outlined={isOutlined}
       ref={ref}
+      small={isSmall}
     >
       {children}
     </StyledButton>

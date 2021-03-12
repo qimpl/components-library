@@ -48,3 +48,13 @@ test('Transparent button with custom color', () => {
     )
   ).toMatchSnapshot();
 });
+
+test('Small button', () => {
+  expect(
+    render(
+      <Button handleClick={() => 'button click'} isSmall>
+        Small button
+      </Button>
+    )
+  ).toMatchSnapshot();
+});
