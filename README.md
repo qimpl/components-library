@@ -1,6 +1,9 @@
 # Qimpl Components
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-airbnb-brightgreen.svg)](https://airbnb.io/javascript/)
+[![Version](https://img.shields.io/github/v/release/qimpl/components-library)](https://github.com/qimpl/components-library/releases)
+[![NPM](https://img.shields.io/npm/v/@qimpl/components-library.svg)](https://www.npmjs.com/package/@qimpl/components-library)
+![Code Quality Status](https://github.com/qimpl/components-library/workflows/Code%20Quality/badge.svg?branch=master)
 
 ## Install
 
