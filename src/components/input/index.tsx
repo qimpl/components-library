@@ -6,11 +6,11 @@ import Theme from 'theme/theme';
 
 type InputProps = {
   id: string;
-  label: string;
-  type: string;
   onChange: React.ChangeEventHandler;
   onBlur: React.FocusEventHandler;
   value: string;
+  type?: string;
+  label?: string | null;
   error?: string | null;
 };
 
@@ -49,15 +49,25 @@ const Container = styled.div`
   }
 `;
 
-const Input = ({ id, label, type, onChange, onBlur, value, error = null }: InputProps): React.ReactElement => (
+const Input = ({
+  id,
+  onChange,
+  onBlur,
+  value,
+  type = 'text',
+  label = null,
+  error = null,
+}: InputProps): React.ReactElement => (
   <Container hasError={error !== null}>
-    <label htmlFor={id}>{label}</label>
+    {label !== null && <label htmlFor={id}>{label}</label>}
     <input id={id} type={type} onChange={onChange} onBlur={onBlur} value={value} />
     {error !== null && <span>{error}</span>}
   </Container>
 );
 
 Input.defaultProps = {
+  type: 'text',
+  label: null,
   error: null,
 };
 

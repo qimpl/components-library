@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Story, Meta } from '@storybook/react/types-6-0';
 
-import Text, { TextVariant, TextProps } from 'components/text/text';
+import Text, { TextVariant, TextProps } from 'components/text';
 import Theme from 'theme/theme';
 
 export default {

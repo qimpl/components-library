@@ -2,7 +2,7 @@ import React from 'react';
 
 import { render } from '@testing-library/react';
 
-import Button from 'components/button/button';
+import Button from 'components/button';
 import Theme from 'theme/theme';
 
 test('Primary button with default color', () => {

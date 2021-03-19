@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Story, Meta } from '@storybook/react/types-6-0';
 
-import Anchor, { AnchorProps } from 'components/anchor/anchor';
+import Anchor, { AnchorProps } from 'components/anchor';
 import Theme from 'theme/theme';
 
 export default {
