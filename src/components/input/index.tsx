@@ -11,6 +11,7 @@ type InputProps = {
   value: string;
   type?: string;
   label?: string | null;
+  placeholder?: string | undefined;
   error?: string | null;
 };
 
@@ -40,6 +41,10 @@ const Container = styled.div`
     &:focus {
       border-color: ${Theme.colors.primary};
     }
+
+    &::placeholder {
+      color: ${Theme.colors.gray};
+    }
   }
 
   span {
@@ -56,11 +61,12 @@ const Input = ({
   value,
   type = 'text',
   label = null,
+  placeholder = undefined,
   error = null,
 }: InputProps): React.ReactElement => (
   <Container hasError={error !== null}>
     {label !== null && <label htmlFor={id}>{label}</label>}
-    <input id={id} type={type} onChange={onChange} onBlur={onBlur} value={value} />
+    <input id={id} type={type} onChange={onChange} onBlur={onBlur} value={value} placeholder={placeholder} />
     {error !== null && <span>{error}</span>}
   </Container>
 );
@@ -68,6 +74,7 @@ const Input = ({
 Input.defaultProps = {
   type: 'text',
   label: null,
+  placeholder: undefined,
   error: null,
 };
 
