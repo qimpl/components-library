@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
 import { darken } from 'polished';
 import styled from 'styled-components';
@@ -44,20 +44,25 @@ const A = styled.a`
   }
 `;
 
-const Anchor = ({
-  href,
-  title,
-  children,
-  target = '_self',
-  anchorStyle = {
-    color: Theme.colors.primary,
-    hoverColor: darken(0.1, Theme.colors.primary),
-  },
-  noUnderline = false,
-}: AnchorProps): React.ReactElement => (
-  <A href={href} title={title} target={target} anchorStyle={anchorStyle} noUnderline={noUnderline}>
-    {children}
-  </A>
+const Anchor = forwardRef<HTMLAnchorElement, AnchorProps>(
+  (
+    {
+      href,
+      title,
+      children,
+      target = '_self',
+      anchorStyle = {
+        color: Theme.colors.primary,
+        hoverColor: darken(0.1, Theme.colors.primary),
+      },
+      noUnderline = false,
+    },
+    ref
+  ): React.ReactElement => (
+    <A ref={ref} href={href} title={title} target={target} anchorStyle={anchorStyle} noUnderline={noUnderline}>
+      {children}
+    </A>
+  )
 );
 
 Anchor.defaultProps = {
@@ -69,6 +74,8 @@ Anchor.defaultProps = {
   },
   noUnderline: false,
 };
+
+Anchor.displayName = 'Anchor';
 
 export default Anchor;
 export { AnchorProps };
