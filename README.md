@@ -15,6 +15,9 @@ npm install --save components-library
 
 - Anchor
 - Button
+- Input
+- Menu
+- MenuItem
 - Text
 - Title
 
