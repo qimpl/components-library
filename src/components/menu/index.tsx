@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import Theme from 'theme/theme';
 
-import Button from '../button/button';
+import Button from '../button';
 
 type MenuProps = {
   toggleButtonContent: string | React.ReactElement | React.ReactElement[];

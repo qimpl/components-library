@@ -37,3 +37,8 @@ PasswordInput.args = {
   label: 'Password',
   type: 'password',
 };
+
+export const NoLabelInput = Template.bind({});
+PasswordInput.args = {
+  id: 'nolabel',
+};

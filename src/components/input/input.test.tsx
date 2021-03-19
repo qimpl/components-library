@@ -27,3 +27,7 @@ test('Error Input', () => {
     )
   ).toMatchSnapshot();
 });
+
+test('Error Input', () => {
+  expect(render(<Input id='nolabel' onChange={() => 'changed'} onBlur={() => 'blurred'} value='' />)).toMatchSnapshot();
+});
