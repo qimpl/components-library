@@ -42,3 +42,9 @@ export const NoLabelInput = Template.bind({});
 PasswordInput.args = {
   id: 'nolabel',
 };
+
+export const InputWithPlaceholder = Template.bind({});
+InputWithPlaceholder.args = {
+  id: 'placeholder',
+  placeholder: 'Prénom',
+};

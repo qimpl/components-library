@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-bdfBwQ laVgbg"
+        class="sc-bdfBwQ kLxXaM"
       >
         <label
           for="username"
@@ -23,7 +23,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-bdfBwQ laVgbg"
+      class="sc-bdfBwQ kLxXaM"
     >
       <label
         for="username"
@@ -97,7 +97,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-bdfBwQ ikiNRb"
+        class="sc-bdfBwQ iRqYDH"
       >
         <label
           for="email"
@@ -117,7 +117,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-bdfBwQ ikiNRb"
+      class="sc-bdfBwQ iRqYDH"
     >
       <label
         for="email"
@@ -194,7 +194,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-bdfBwQ laVgbg"
+        class="sc-bdfBwQ kLxXaM"
       >
         <input
           id="nolabel"
@@ -206,10 +206,93 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-bdfBwQ laVgbg"
+      class="sc-bdfBwQ kLxXaM"
     >
       <input
         id="nolabel"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Input With placeholder 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sc-bdfBwQ kLxXaM"
+      >
+        <input
+          id="placeholder"
+          placeholder="My placeholder"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-bdfBwQ kLxXaM"
+    >
+      <input
+        id="placeholder"
+        placeholder="My placeholder"
         type="text"
         value=""
       />

@@ -27,7 +27,20 @@ test('Error Input', () => {
     )
   ).toMatchSnapshot();
 });
-
 test('Error Input', () => {
   expect(render(<Input id='nolabel' onChange={() => 'changed'} onBlur={() => 'blurred'} value='' />)).toMatchSnapshot();
+});
+
+test('Input With placeholder', () => {
+  expect(
+    render(
+      <Input
+        id='placeholder'
+        onChange={() => 'changed'}
+        onBlur={() => 'blurred'}
+        value=''
+        placeholder='My placeholder'
+      />
+    )
+  ).toMatchSnapshot();
 });
