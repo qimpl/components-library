@@ -10,6 +10,7 @@ import Pricing, { PricingProps } from './pricing';
 import Select, { SelectProps } from './select';
 import Text, { TextProps, TextVariant } from './text';
 import Title, { TitleProps, TitleVariant } from './title';
+import VisitPicker, { VisitPickerProps } from './visitPicker';
 
 export {
   Anchor,
@@ -38,4 +39,6 @@ export {
   Title,
   TitleProps,
   TitleVariant,
+  VisitPicker,
+  VisitPickerProps,
 };
