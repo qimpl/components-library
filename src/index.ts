@@ -18,4 +18,6 @@ export {
   Title,
   TitleProps,
   TitleVariant,
+  Card,
+  CardProps,
 } from './components';
