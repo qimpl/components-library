@@ -18,4 +18,6 @@ export {
   Title,
   TitleProps,
   TitleVariant,
+  Map,
+  MapProps,
 } from './components';
