@@ -15,13 +15,14 @@ npm install --save components-library
 
 - Anchor
 - Button
+- Card
 - Input
+- Map
 - Menu
 - MenuItem
+- Select
 - Text
 - Title
-- Card
-- Map
 
 ## Usage
 
