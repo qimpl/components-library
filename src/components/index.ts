@@ -2,6 +2,7 @@ import Anchor, { AnchorProps } from './anchor';
 import Button, { ButtonProps } from './button';
 import Card, { CardProps } from './card';
 import Input, { InputProps } from './input';
+import Map, { MapProps } from './map';
 import Menu, { MenuProps } from './menu';
 import MenuItem, { MenuItemProps } from './menu/menuItem';
 import Text, { TextProps, TextVariant } from './text';
@@ -26,4 +27,6 @@ export {
   TitleVariant,
   Card,
   CardProps,
+  Map,
+  MapProps,
 };

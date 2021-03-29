@@ -21,6 +21,7 @@ npm install --save components-library
 - Text
 - Title
 - Card
+- Map
 
 ## Usage
 
