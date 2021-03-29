@@ -20,6 +20,7 @@ npm install --save components-library
 - MenuItem
 - Text
 - Title
+- Card
 - Map
 
 ## Usage

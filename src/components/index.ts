@@ -1,5 +1,6 @@
 import Anchor, { AnchorProps } from './anchor';
 import Button, { ButtonProps } from './button';
+import Card, { CardProps } from './card';
 import Input, { InputProps } from './input';
 import Map, { MapProps } from './map';
 import Menu, { MenuProps } from './menu';
@@ -24,6 +25,8 @@ export {
   Title,
   TitleProps,
   TitleVariant,
+  Card,
+  CardProps,
   Map,
   MapProps,
 };
