@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/github/v/release/qimpl/components-library)](https://github.com/qimpl/components-library/releases)
 [![NPM](https://img.shields.io/npm/v/@qimpl/components-library.svg)](https://www.npmjs.com/package/@qimpl/components-library)
 ![Code Quality Status](https://github.com/qimpl/components-library/workflows/Code%20Quality/badge.svg?branch=master)
+[![Storybook](https://img.shields.io/badge/Storybook-gh%20pages-ff69b4.svg)](https://qimpl.github.io/components-library)
 
 ## Install
 
