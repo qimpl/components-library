@@ -6,9 +6,9 @@ import Theme from 'theme/theme';
 
 type InputProps = {
   id: string;
-  onChange: React.ChangeEventHandler;
-  onBlur: React.FocusEventHandler;
-  value: string;
+  onChange?: React.ChangeEventHandler;
+  onBlur?: React.FocusEventHandler;
+  value?: string;
   type?: string;
   label?: string | null;
   placeholder?: string | undefined;
@@ -56,9 +56,9 @@ const Container = styled.div`
 
 const Input = ({
   id,
-  onChange,
-  onBlur,
-  value,
+  onChange = undefined,
+  onBlur = undefined,
+  value = undefined,
   type = 'text',
   label = null,
   placeholder = undefined,
@@ -73,6 +73,9 @@ const Input = ({
 
 Input.defaultProps = {
   type: 'text',
+  onChange: undefined,
+  onBlur: undefined,
+  value: undefined,
   label: null,
   placeholder: undefined,
   error: null,
