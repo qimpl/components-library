@@ -16,6 +16,7 @@ npm install --save components-library
 - Anchor
 - Button
 - Card
+- Form
 - Input
 - Map
 - Menu
