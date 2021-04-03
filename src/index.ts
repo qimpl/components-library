@@ -18,6 +18,8 @@ export {
   MenuProps,
   MenuItem,
   MenuItemProps,
+  Pricing,
+  PricingProps,
   Select,
   SelectProps,
   Text,

@@ -22,6 +22,7 @@ npm install --save components-library
 - Map
 - Menu
 - MenuItem
+- Pricing
 - Select
 - Text
 - Title

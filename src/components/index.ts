@@ -6,6 +6,7 @@ import Input, { InputProps } from './input';
 import Map, { MapProps } from './map';
 import Menu, { MenuProps } from './menu';
 import MenuItem, { MenuItemProps } from './menu/menuItem';
+import Pricing, { PricingProps } from './pricing';
 import Select, { SelectProps } from './select';
 import Text, { TextProps, TextVariant } from './text';
 import Title, { TitleProps, TitleVariant } from './title';
@@ -27,6 +28,8 @@ export {
   MenuProps,
   MenuItem,
   MenuItemProps,
+  Pricing,
+  PricingProps,
   Select,
   SelectProps,
   Text,
