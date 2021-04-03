@@ -12,11 +12,11 @@ type Option = {
 
 type SelectProps = {
   id: string;
-  onChange: React.ChangeEventHandler;
-  onBlur: React.FocusEventHandler;
-  value: string;
   defaultOption: Option;
   options: Option[];
+  onChange?: React.ChangeEventHandler;
+  onBlur?: React.FocusEventHandler;
+  value?: string;
   label?: string | null;
   error?: string | null;
 };
@@ -59,11 +59,11 @@ const Container = styled.div`
 
 const Select = ({
   id,
-  onChange,
-  onBlur,
-  value,
   defaultOption,
   options,
+  onChange = undefined,
+  onBlur = undefined,
+  value = undefined,
   label = null,
   error = null,
 }: SelectProps): React.ReactElement => {
@@ -86,6 +86,9 @@ const Select = ({
 };
 
 Select.defaultProps = {
+  onChange: undefined,
+  onBlur: undefined,
+  value: undefined,
   label: null,
   error: null,
 };
