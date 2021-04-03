@@ -3,7 +3,7 @@ import React, { forwardRef } from 'react';
 import { lighten, rgba } from 'polished';
 import styled from 'styled-components';
 
-import Theme from 'theme/theme';
+import Theme from 'theme';
 
 type ButtonProps = {
   children: React.ReactNode | React.ReactElement | string;

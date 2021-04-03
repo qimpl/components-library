@@ -3,7 +3,7 @@ import React, { forwardRef } from 'react';
 import { darken } from 'polished';
 import styled from 'styled-components';
 
-import Theme from 'theme/theme';
+import Theme from 'theme';
 
 type AnchorProps = {
   title: string;

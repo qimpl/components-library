@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 
 import styled from 'styled-components';
 
-import Theme from 'theme/theme';
+import Theme from 'theme';
 
 import Button from '../button';
 
