@@ -3,7 +3,7 @@ import React from 'react';
 import { Checkmark24 } from '@carbon/icons-react';
 import styled from 'styled-components';
 
-import Theme from '../../theme/theme';
+import Theme from '../../theme';
 import Text, { TextVariant } from '../text';
 import Title, { TitleVariant } from '../title';
 
