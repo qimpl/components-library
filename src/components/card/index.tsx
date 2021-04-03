@@ -2,7 +2,7 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import Theme from 'theme/theme';
+import Theme from 'theme';
 
 const CardContainer = styled.div`
   display: flex;

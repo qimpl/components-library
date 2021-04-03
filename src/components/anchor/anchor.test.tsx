@@ -3,7 +3,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 
 import Anchor from 'components/anchor';
-import Theme from 'theme/theme';
+import Theme from 'theme';
 
 test('Link with default colors', () => {
   expect(

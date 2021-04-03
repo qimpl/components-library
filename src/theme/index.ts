@@ -13,6 +13,7 @@ declare module 'styled-components' {
       lightGray: string;
       extraLightGray: string;
     };
+    fontFamily: string;
   }
 }
 
@@ -27,6 +28,7 @@ const Theme: DefaultTheme = {
     lightGray: rgba(120, 127, 98, 0.3),
     extraLightGray: rgba(241, 242, 238, 0.3),
   },
+  fontFamily: 'Source Sans Pro',
 };
 
 export default Theme;

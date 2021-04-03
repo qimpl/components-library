@@ -3,7 +3,7 @@ import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 
 import Title, { TitleVariant, TitleProps } from 'components/title';
-import Theme from 'theme/theme';
+import Theme from 'theme';
 
 export default {
   title: 'Qimpl/Title',

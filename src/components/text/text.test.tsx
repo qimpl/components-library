@@ -3,7 +3,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 
 import Text, { TextVariant } from 'components/text';
-import Theme from 'theme/theme';
+import Theme from 'theme';
 
 test('Large text with default color', () => {
   expect(render(<Text variant={TextVariant.LARGE}>Large text</Text>)).toMatchSnapshot();

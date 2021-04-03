@@ -3,7 +3,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 
 import Button from 'components/button';
-import Theme from 'theme/theme';
+import Theme from 'theme';
 
 test('Primary button with default color', () => {
   expect(render(<Button handleClick={() => 'button click'}>Primary button</Button>)).toMatchSnapshot();

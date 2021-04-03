@@ -3,7 +3,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 
 import Title, { TitleVariant } from 'components/title';
-import Theme from 'theme/theme';
+import Theme from 'theme';
 
 test('H1 with default color', () => {
   expect(render(<Title variant={TitleVariant.H1}>H1 Title</Title>)).toMatchSnapshot();
