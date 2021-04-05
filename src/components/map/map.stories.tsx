@@ -9,7 +9,11 @@ export default {
   component: Map,
 } as Meta;
 
-const Template: Story<MapProps> = (args) => <Map {...args} />;
+const Template: Story<MapProps> = (args) => (
+  <div style={{ width: '100%', height: '100vh' }}>
+    <Map {...args} />
+  </div>
+);
 
 export const defaultMap = Template.bind({});
 defaultMap.args = {
