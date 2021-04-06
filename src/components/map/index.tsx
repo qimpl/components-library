@@ -23,7 +23,7 @@ const Map = ({ googleApiKey, markers }: MapProps): React.ReactElement => {
   return (
     <LoadScript googleMapsApiKey={googleApiKey}>
       <GoogleMap
-        mapContainerStyle={{ width: '100%', height: '100vh' }}
+        mapContainerStyle={{ width: '100%', height: '100%' }}
         center={markers[0] || { lat: 50.62925, lng: 3.057256 }}
         zoom={15}
         options={mapOptions}
