@@ -10,6 +10,7 @@ type MenuProps = {
   toggleButtonContent: string | React.ReactElement | React.ReactElement[];
   children: React.ReactElement | React.ReactElement[];
   toggleButtonColor?: string;
+  isToggleButtonSmall?: boolean;
   isDropdown?: boolean;
 };
 
@@ -57,6 +58,7 @@ const Menu = ({
   toggleButtonContent,
   children,
   toggleButtonColor = Theme.colors.primary,
+  isToggleButtonSmall = false,
   isDropdown = false,
 }: MenuProps): React.ReactElement => {
   const [isOpen, setIsOpen] = useState(false);
@@ -81,7 +83,12 @@ const Menu = ({
 
   return (
     <Container>
-      <Button handleClick={() => setIsOpen(!isOpen)} ref={menuTogglerRef} color={toggleButtonColor}>
+      <Button
+        handleClick={() => setIsOpen(!isOpen)}
+        ref={menuTogglerRef}
+        color={toggleButtonColor}
+        isSmall={isToggleButtonSmall}
+      >
         {toggleButtonContent}
       </Button>
       <StyledMenu ref={menuRef} isOpen={isOpen} isDropdown={isDropdown}>
@@ -93,6 +100,7 @@ const Menu = ({
 
 Menu.defaultProps = {
   toggleButtonColor: Theme.colors.primary,
+  isToggleButtonSmall: false,
   isDropdown: false,
 };
 
