@@ -12,6 +12,7 @@ type AnchorProps = {
   target?: string;
   anchorStyle?: AnchorStyleProps;
   noUnderline?: boolean;
+  onClick?: React.ReactEventHandler | React.MouseEventHandler | undefined;
 };
 
 type AnchorStyleProps = {
@@ -56,10 +57,19 @@ const Anchor = forwardRef<HTMLAnchorElement, AnchorProps>(
         hoverColor: darken(0.1, Theme.colors.primary),
       },
       noUnderline = false,
+      onClick = undefined,
     },
     ref
   ): React.ReactElement => (
-    <A ref={ref} href={href} title={title} target={target} anchorStyle={anchorStyle} noUnderline={noUnderline}>
+    <A
+      ref={ref}
+      href={href}
+      title={title}
+      target={target}
+      anchorStyle={anchorStyle}
+      noUnderline={noUnderline}
+      onClick={onClick}
+    >
       {children}
     </A>
   )
@@ -73,6 +83,7 @@ Anchor.defaultProps = {
     hoverColor: darken(0.1, Theme.colors.primary),
   },
   noUnderline: false,
+  onClick: undefined,
 };
 
 Anchor.displayName = 'Anchor';
