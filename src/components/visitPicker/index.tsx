@@ -124,7 +124,7 @@ const VisitPicker = ({
     <VisitPickerContainer>
       <section>
         {weekDays.length !== 0 && (
-          <>
+          <div>
             <header>
               {weekDays[currentWeekDay].order !== 0 && (
                 <Button
@@ -162,7 +162,7 @@ const VisitPicker = ({
                 <Text variant={TextVariant.MEDIUM}>{noAvailabilityMsg}</Text>
               )}
             </section>
-          </>
+          </div>
         )}
       </section>
     </VisitPickerContainer>
