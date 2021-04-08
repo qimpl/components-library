@@ -28,4 +28,6 @@ export {
   Title,
   TitleProps,
   TitleVariant,
+  VisitPicker,
+  VisitPickerProps,
 } from './components';

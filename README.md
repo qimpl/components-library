@@ -26,6 +26,7 @@ npm install --save components-library
 - Select
 - Text
 - Title
+- VisitPicker
 
 ## Usage
 
