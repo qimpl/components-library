@@ -73,6 +73,16 @@ const VisitPickerContainer = styled.div`
         display: grid;
         grid-column: 2;
         justify-content: center;
+
+        @media (max-width: 768px) {
+          grid-column: 1;
+          justify-content: flex-end;
+        }
+
+        @media (max-width: 400px) {
+          grid-column: 1;
+          justify-content: center;
+        }
       }
     }
   }
@@ -84,15 +94,15 @@ const VisitPicker = ({
   handleClickVisitSlot,
   noAvailabilityMsg = '',
 }: VisitPickerProps): React.ReactElement => {
-  const [date, setDate] = useState(new Date());
   const [weekDays, setWeekDays] = useState<WeekDaysAvailabilities[]>([]);
   const [currentWeekDay, setCurrentWeekDay] = useState(0);
 
   useEffect(() => {
     const weekdaysAvailabilities: WeekDaysAvailabilities[] = [];
+    let date = new Date();
     for (let i = 0; i <= 6; i += 1) {
       const nextDate = new Date(date.setDate(date.getDate() + 1));
-      setDate(nextDate);
+      date = nextDate;
 
       const weekdayAvailabilities = userAvailabilities.filter(
         (element: UserAvailabilities) => element.weekday === nextDate.getDay()
@@ -118,7 +128,7 @@ const VisitPicker = ({
       weekdaysAvailabilities.push({ order: i, dailyAvailabilities, timestamp: nextDate.getTime() });
     }
     setWeekDays(weekdaysAvailabilities);
-  }, [date, userAvailabilities, userBookedVisits]);
+  }, [userAvailabilities, userBookedVisits]);
 
   return (
     <VisitPickerContainer>
