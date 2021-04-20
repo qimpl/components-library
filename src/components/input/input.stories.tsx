@@ -41,10 +41,27 @@ PasswordInput.args = {
 export const NoLabelInput = Template.bind({});
 PasswordInput.args = {
   id: 'nolabel',
+  type: 'text',
 };
 
 export const InputWithPlaceholder = Template.bind({});
 InputWithPlaceholder.args = {
   id: 'placeholder',
+  type: 'text',
   placeholder: 'Prénom',
+};
+
+export const FileInput = Template.bind({});
+FileInput.args = {
+  id: 'file',
+  type: 'file',
+  accept: 'image/png',
+};
+
+export const MultipleFileInput = Template.bind({});
+MultipleFileInput.args = {
+  id: 'file',
+  type: 'file',
+  multiple: true,
+  accept: 'image/png',
 };

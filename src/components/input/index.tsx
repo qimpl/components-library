@@ -4,16 +4,30 @@ import styled from 'styled-components';
 
 import Theme from 'theme';
 
-type InputProps = {
+type CommonProps = {
   id: string;
   onChange?: React.ChangeEventHandler;
   onBlur?: React.FocusEventHandler;
-  value?: string;
-  type?: string;
   label?: string | null;
   placeholder?: string | undefined;
   error?: string | null;
 };
+
+type TruncatedProps =
+  | {
+      type: 'button' | 'checkbox' | 'date' | 'email' | 'hidden' | 'password' | 'radio' | 'tel' | 'text' | 'number';
+      value?: string;
+      accept?: never;
+      multiple?: never;
+    }
+  | {
+      type: 'file';
+      accept: string;
+      value?: never;
+      multiple?: boolean;
+    };
+
+type InputProps = CommonProps & TruncatedProps;
 
 type ContainerProps = {
   hasError: boolean;
@@ -59,23 +73,32 @@ const Input = ({
   onChange = undefined,
   onBlur = undefined,
   value = undefined,
-  type = 'text',
+  type,
   label = null,
   placeholder = undefined,
   error = null,
+  accept,
+  multiple = false,
 }: InputProps): React.ReactElement => (
   <Container hasError={error !== null}>
     {label !== null && <label htmlFor={id}>{label}</label>}
-    <input id={id} type={type} onChange={onChange} onBlur={onBlur} value={value} placeholder={placeholder} />
+    <input
+      id={id}
+      type={type}
+      onChange={onChange}
+      onBlur={onBlur}
+      value={value}
+      placeholder={placeholder}
+      accept={accept}
+      multiple={multiple}
+    />
     {error !== null && <span>{error}</span>}
   </Container>
 );
 
 Input.defaultProps = {
-  type: 'text',
   onChange: undefined,
   onBlur: undefined,
-  value: undefined,
   label: null,
   placeholder: undefined,
   error: null,

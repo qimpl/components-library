@@ -29,7 +29,9 @@ test('Error Input', () => {
 });
 
 test('Input With no label', () => {
-  expect(render(<Input id='nolabel' onChange={() => 'changed'} onBlur={() => 'blurred'} value='' />)).toMatchSnapshot();
+  expect(
+    render(<Input id='nolabel' type='text' onChange={() => 'changed'} onBlur={() => 'blurred'} value='' />)
+  ).toMatchSnapshot();
 });
 
 test('Input With placeholder', () => {
@@ -37,11 +39,20 @@ test('Input With placeholder', () => {
     render(
       <Input
         id='placeholder'
+        type='text'
         onChange={() => 'changed'}
         onBlur={() => 'blurred'}
         value=''
         placeholder='My placeholder'
       />
+    )
+  ).toMatchSnapshot();
+});
+
+test('File Input', () => {
+  expect(
+    render(
+      <Input id='file' type='file' accept='image/png' multiple onChange={() => 'changed'} onBlur={() => 'blurred'} />
     )
   ).toMatchSnapshot();
 });
