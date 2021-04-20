@@ -22,11 +22,11 @@ const TestForm = withFormik<FormProps, TestFormValues>({
 const fields = [
   {
     id: 'firstName',
-    element: <Input id='firstName' label='First name' />,
+    element: <Input id='firstName' type='text' label='First name' />,
   },
   {
     id: 'lastName',
-    element: <Input id='lastName' label='Last name' />,
+    element: <Input id='lastName' type='text' label='Last name' />,
   },
 ];
 

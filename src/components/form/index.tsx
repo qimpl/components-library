@@ -22,6 +22,7 @@ const Form = ({
   handleBlur,
   values,
   isSubmitting,
+  setFieldValue,
   fields,
   buttonLabel,
 }: FormProps & FormikProps<any>): React.ReactElement => (
@@ -30,9 +31,14 @@ const Form = ({
       (field: Field): React.ReactElement => (
         <div key={field.id}>
           {React.cloneElement(field.element, {
-            onChange: handleChange,
+            onChange:
+              field.element.props.type === 'file'
+                ? (event: React.ChangeEvent<HTMLInputElement>) => {
+                    setFieldValue(field.id, event.target.files);
+                  }
+                : handleChange,
             onBlur: handleBlur,
-            value: values[field.id],
+            value: field.element.props.type === 'file' ? undefined : values[field.id],
             error: touched[field.id] && errors[field.id] ? errors[field.id] : null,
           })}
         </div>
