@@ -31,7 +31,9 @@
   "peerDependencies": {
     "polished": ">=4.1.0",
     "react": ">=16.9.0",
-    "react-dom": ">=16.9.0"
+    "react-dom": ">=16.9.0",
+    "react-use": ">=17",
+    "styled-components": ">= 5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.17",
@@ -73,6 +75,8 @@
     "react": "^17.0.0",
     "react-dom": "^17.0.1",
     "react-scripts": "^4.0.3",
+    "react-use": "^17.2.4",
+    "styled-components": "^5.2.1",
     "stylelint": "^13.11.0",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-rational-order": "^0.0.4",
@@ -89,8 +93,8 @@
     "@storybook/preset-create-react-app": "^3.1.6",
     "@storybook/react": "^6.1.18",
     "formik": "^2.2.6",
-    "polished": "^4.1.1",
-    "styled-components": "^5.2.1"
+    "polished": ">=4.1.0",
+    "react-cookie-consent": "^6.2.3"
   },
   "husky": {
     "hooks": {

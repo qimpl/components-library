@@ -15,7 +15,7 @@ Object {
                 class="sc-jSgupP dZQGQG"
                 font-size="16px"
               >
-                Wed Apr 21 2021
+                Thu May 13 2021
               </h3>
               <button
                 class="sc-bdfBwQ fPgVyf"
@@ -39,12 +39,27 @@ Object {
               </button>
             </header>
             <section>
-              <p
-                class="sc-gsTCUz eNYSDA"
-                style="color: rgb(1, 60, 99); font-size: 15px; line-height: 21px;"
+              <button
+                class="sc-bdfBwQ hMKfoD"
+                color="#013c63"
+                type="button"
               >
-                No slot available for this date
-              </p>
+                2:00
+              </button>
+              <button
+                class="sc-bdfBwQ hMKfoD"
+                color="#013c63"
+                type="button"
+              >
+                3:00
+              </button>
+              <button
+                class="sc-bdfBwQ hMKfoD"
+                color="#013c63"
+                type="button"
+              >
+                4:00
+              </button>
             </section>
           </div>
         </section>
@@ -62,7 +77,7 @@ Object {
               class="sc-jSgupP dZQGQG"
               font-size="16px"
             >
-              Wed Apr 21 2021
+              Thu May 13 2021
             </h3>
             <button
               class="sc-bdfBwQ fPgVyf"
@@ -86,12 +101,27 @@ Object {
             </button>
           </header>
           <section>
-            <p
-              class="sc-gsTCUz eNYSDA"
-              style="color: rgb(1, 60, 99); font-size: 15px; line-height: 21px;"
+            <button
+              class="sc-bdfBwQ hMKfoD"
+              color="#013c63"
+              type="button"
             >
-              No slot available for this date
-            </p>
+              2:00
+            </button>
+            <button
+              class="sc-bdfBwQ hMKfoD"
+              color="#013c63"
+              type="button"
+            >
+              3:00
+            </button>
+            <button
+              class="sc-bdfBwQ hMKfoD"
+              color="#013c63"
+              type="button"
+            >
+              4:00
+            </button>
           </section>
         </div>
       </section>
