@@ -8,6 +8,8 @@ export {
   ButtonProps,
   Card,
   CardProps,
+  CookieBanner,
+  CookieBannerProps,
   Form,
   FormProps,
   Input,

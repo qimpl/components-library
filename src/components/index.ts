@@ -1,6 +1,7 @@
 import Anchor, { AnchorProps } from './anchor';
 import Button, { ButtonProps } from './button';
 import Card, { CardProps } from './card';
+import CookieBanner, { CookieBannerProps } from './cookieBanner';
 import Form, { FormProps } from './form';
 import Input, { InputProps } from './input';
 import Map, { MapProps } from './map';
@@ -19,6 +20,8 @@ export {
   ButtonProps,
   Card,
   CardProps,
+  CookieBanner,
+  CookieBannerProps,
   Form,
   FormProps,
   Input,

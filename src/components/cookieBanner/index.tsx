@@ -11,7 +11,8 @@ type CookieBannerProps = {
   message: string;
   buttonText: string;
   ariaAcceptLabel: string;
-  titleContent?: string | React.ReactElement | null;
+  titleContent?: string | React.ReactElement | undefined;
+  cookieName?: string | undefined;
   debug?: boolean;
 };
 
@@ -19,7 +20,8 @@ const CookieBanner = ({
   message,
   buttonText,
   ariaAcceptLabel,
-  titleContent = null,
+  titleContent = undefined,
+  cookieName = 'CookieConsent',
   debug = false,
 }: CookieBannerProps): React.ReactElement => {
   const { width } = useWindowSize();
@@ -53,7 +55,7 @@ const CookieBanner = ({
   return (
     <CookieConsent
       debug={debug}
-      cookieName='AcceptQimplCookie'
+      cookieName={cookieName}
       ariaAcceptLabel={ariaAcceptLabel}
       buttonText={buttonText}
       style={ContainerStyle}
@@ -67,7 +69,8 @@ const CookieBanner = ({
 };
 
 CookieBanner.defaultProps = {
-  titleContent: null,
+  titleContent: undefined,
+  cookieName: undefined,
   debug: false,
 };
 
