@@ -27,11 +27,11 @@ const MyForm = withFormik<FormProps, MyFormValues>({
 const fields = [
   {
     id: 'firstName',
-    element: <Input id='firstName' label='First name' />,
+    element: <Input id='firstName' label='First name' type='text' />,
   },
   {
     id: 'lastName',
-    element: <Input id='lastName' label='Last name' />,
+    element: <Input id='lastName' label='Last name' type='text' />,
   },
 ];
 
