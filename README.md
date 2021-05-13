@@ -17,6 +17,7 @@ npm install --save components-library
 - Anchor
 - Button
 - Card
+- Carousel
 - CookieBanner
 - Form
 - Input
