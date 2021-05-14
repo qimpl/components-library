@@ -1,6 +1,6 @@
 {
   "name": "@qimpl/components-library",
-  "version": "0.7.1",
+  "version": "0.8.0",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.ts",
