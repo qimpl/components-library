@@ -101,7 +101,7 @@ const Carousel = ({ pictures, alt }: CarouselProps): React.ReactElement => {
   return (
     <CarouselContainer {...handlers}>
       {pictures.length > 1 ? (
-        <>
+        <div>
           <Button type='button' isOutlined isSmall handleClick={backSlide}>
             <ArrowLeft32 />
           </Button>
@@ -119,7 +119,7 @@ const Carousel = ({ pictures, alt }: CarouselProps): React.ReactElement => {
           <Button type='button' isOutlined isSmall handleClick={nextSlide}>
             <ArrowRight32 />
           </Button>
-        </>
+        </div>
       ) : (
         displayPicture()
       )}
