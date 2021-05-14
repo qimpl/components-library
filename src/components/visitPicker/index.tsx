@@ -57,7 +57,7 @@ const VisitPickerContainer = styled.div`
     section {
       display: grid;
       grid-gap: 20px;
-      grid-template-columns: auto auto auto;
+      grid-template-columns: auto auto;
       padding: 25px;
       border-top: 1px solid ${Theme.colors.lightGray};
 
