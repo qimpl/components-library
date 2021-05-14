@@ -21,10 +21,11 @@ const CarouselContainer = styled.div`
 
   > div {
     > div {
-      position: absolute;
-      top: 90%;
-      left: 50%;
+      position: relative;
+      bottom: 30px;
       z-index: 2;
+      display: flex;
+      justify-content: center;
     }
 
     > button {
