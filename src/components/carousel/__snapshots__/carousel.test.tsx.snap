@@ -8,6 +8,70 @@ Object {
       <div
         class="sc-dlfnbm dqcCbN"
       >
+        <div>
+          <button
+            class="sc-bdfBwQ kvQbjl"
+            color="#013c63"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              fill="currentColor"
+              focusable="false"
+              height="32"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 32 32"
+              width="32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14 26L15.41 24.59 7.83 17 28 17 28 15 7.83 15 15.41 7.41 14 6 4 16 14 26z"
+              />
+            </svg>
+          </button>
+          <img
+            alt="Carousel test picture 0"
+            src="/house1.jpg"
+          />
+          <div>
+            <button
+              class="sc-gsTCUz gRkIgJ"
+              style="background-color: white;"
+            />
+            <button
+              class="sc-gsTCUz hCgbiQ"
+              style="background-color: transparent;"
+            />
+          </div>
+          <button
+            class="sc-bdfBwQ kvQbjl"
+            color="#013c63"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              fill="currentColor"
+              focusable="false"
+              height="32"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 32 32"
+              width="32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 6L16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-dlfnbm dqcCbN"
+    >
+      <div>
         <button
           class="sc-bdfBwQ kvQbjl"
           color="#013c63"
@@ -63,66 +127,6 @@ Object {
           </svg>
         </button>
       </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="sc-dlfnbm dqcCbN"
-    >
-      <button
-        class="sc-bdfBwQ kvQbjl"
-        color="#013c63"
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          fill="currentColor"
-          focusable="false"
-          height="32"
-          preserveAspectRatio="xMidYMid meet"
-          viewBox="0 0 32 32"
-          width="32"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M14 26L15.41 24.59 7.83 17 28 17 28 15 7.83 15 15.41 7.41 14 6 4 16 14 26z"
-          />
-        </svg>
-      </button>
-      <img
-        alt="Carousel test picture 0"
-        src="/house1.jpg"
-      />
-      <div>
-        <button
-          class="sc-gsTCUz gRkIgJ"
-          style="background-color: white;"
-        />
-        <button
-          class="sc-gsTCUz hCgbiQ"
-          style="background-color: transparent;"
-        />
-      </div>
-      <button
-        class="sc-bdfBwQ kvQbjl"
-        color="#013c63"
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          fill="currentColor"
-          focusable="false"
-          height="32"
-          preserveAspectRatio="xMidYMid meet"
-          viewBox="0 0 32 32"
-          width="32"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M18 6L16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"
-          />
-        </svg>
-      </button>
     </div>
   </div>,
   "debug": [Function],
