@@ -19,50 +19,53 @@ const CarouselContainer = styled.div`
   width: 100%;
   height: 100%;
 
-  > button {
-    position: absolute;
-    top: 50%;
-    z-index: 2;
-    width: 30px;
-    height: 30px;
-    color: white;
-    background-color: ${Theme.colors.darkGray};
-    border-color: ${Theme.colors.darkGray};
-    cursor: pointer;
-    opacity: 0;
-
-    &:first-of-type {
-      left: 20px;
-      transition: opacity 0.6s ease-in-out;
+  > div {
+    > div {
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      z-index: 2;
     }
 
-    &:last-of-type {
-      right: 20px;
-      transition: opacity 0.6s ease-in-out;
+    > button {
+      position: absolute;
+      top: 50%;
+      z-index: 2;
+      width: 30px;
+      height: 30px;
+      color: white;
+      background-color: ${Theme.colors.darkGray};
+      border-color: ${Theme.colors.darkGray};
+      cursor: pointer;
+      opacity: 0;
+
+      &:first-of-type {
+        left: 20px;
+        transition: opacity 0.6s ease-in-out;
+      }
+
+      &:last-of-type {
+        right: 20px;
+        transition: opacity 0.6s ease-in-out;
+      }
+
+      &:hover {
+        background-color: ${Theme.colors.darkGray};
+      }
+    }
+
+    > img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
     }
 
     &:hover {
-      background-color: ${Theme.colors.darkGray};
+      > button:first-of-type,
+      > button:last-of-type {
+        opacity: 0.8;
+      }
     }
-  }
-
-  > img {
-    object-fit: cover;
-    width: 100%;
-  }
-
-  &:hover {
-    > button:first-of-type,
-    > button:last-of-type {
-      opacity: 0.8;
-    }
-  }
-
-  > div {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    z-index: 2;
   }
 `;
 
