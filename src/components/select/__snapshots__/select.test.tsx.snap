@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-bdfBwQ gkORIc"
+        class="sc-bdnxRM bKpiH"
       >
         <label
           for="my-select"
@@ -44,7 +44,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-bdfBwQ gkORIc"
+      class="sc-bdnxRM bKpiH"
     >
       <label
         for="my-select"
@@ -139,7 +139,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-bdfBwQ gkORIc"
+        class="sc-bdnxRM bKpiH"
       >
         <label
           for="my-select"
@@ -177,7 +177,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-bdfBwQ gkORIc"
+      class="sc-bdnxRM bKpiH"
     >
       <label
         for="my-select"
@@ -272,7 +272,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-bdfBwQ hVVFSP"
+        class="sc-bdnxRM jakGHo"
       >
         <label
           for="error-select"
@@ -313,7 +313,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-bdfBwQ hVVFSP"
+      class="sc-bdnxRM jakGHo"
     >
       <label
         for="error-select"
@@ -411,7 +411,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-bdfBwQ gkORIc"
+        class="sc-bdnxRM bKpiH"
       >
         <select
           id="select-no-label"
@@ -444,7 +444,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-bdfBwQ gkORIc"
+      class="sc-bdnxRM bKpiH"
     >
       <select
         id="select-no-label"

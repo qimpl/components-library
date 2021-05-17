@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <p
-        class="sc-bdfBwQ jnVyrN"
+        class="sc-bdnxRM beWETS"
         style="color: rgb(1, 60, 99); font-size: 13px; line-height: 19px;"
       >
         Extra small text
@@ -15,7 +15,7 @@ Object {
   </body>,
   "container": <div>
     <p
-      class="sc-bdfBwQ jnVyrN"
+      class="sc-bdnxRM beWETS"
       style="color: rgb(1, 60, 99); font-size: 13px; line-height: 19px;"
     >
       Extra small text
@@ -81,7 +81,7 @@ Object {
   "baseElement": <body>
     <div>
       <p
-        class="sc-bdfBwQ dJXQpY"
+        class="sc-bdnxRM ceLJmv"
         style="color: rgb(1, 60, 99); font-size: 18px; line-height: 24px;"
       >
         Large text
@@ -90,7 +90,7 @@ Object {
   </body>,
   "container": <div>
     <p
-      class="sc-bdfBwQ dJXQpY"
+      class="sc-bdnxRM ceLJmv"
       style="color: rgb(1, 60, 99); font-size: 18px; line-height: 24px;"
     >
       Large text
@@ -156,7 +156,7 @@ Object {
   "baseElement": <body>
     <div>
       <p
-        class="sc-bdfBwQ hbZeeL"
+        class="sc-bdnxRM fPIkWE"
         style="color: rgba(67, 80, 88, 0.8); font-size: 15px; line-height: 21px;"
       >
         Medium text
@@ -165,7 +165,7 @@ Object {
   </body>,
   "container": <div>
     <p
-      class="sc-bdfBwQ hbZeeL"
+      class="sc-bdnxRM fPIkWE"
       style="color: rgba(67, 80, 88, 0.8); font-size: 15px; line-height: 21px;"
     >
       Medium text
@@ -231,7 +231,7 @@ Object {
   "baseElement": <body>
     <div>
       <p
-        class="sc-bdfBwQ jRDXoV"
+        class="sc-bdnxRM jHaFCC"
         style="color: rgb(1, 60, 99); font-size: 14px; line-height: 21px;"
       >
         Small text
@@ -240,7 +240,7 @@ Object {
   </body>,
   "container": <div>
     <p
-      class="sc-bdfBwQ jRDXoV"
+      class="sc-bdnxRM jHaFCC"
       style="color: rgb(1, 60, 99); font-size: 14px; line-height: 21px;"
     >
       Small text

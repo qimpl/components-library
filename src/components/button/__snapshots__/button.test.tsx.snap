@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="sc-bdfBwQ knJQQW"
+        class="sc-bdnxRM idiVrp"
         color="#ff3d3d"
         disabled=""
         type="button"
@@ -17,7 +17,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="sc-bdfBwQ knJQQW"
+      class="sc-bdnxRM idiVrp"
       color="#ff3d3d"
       disabled=""
       type="button"
@@ -85,7 +85,7 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="sc-bdfBwQ bqWJBt"
+        class="sc-bdnxRM fDmUcm"
         color="#ff3d3d"
         disabled=""
         type="button"
@@ -96,7 +96,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="sc-bdfBwQ bqWJBt"
+      class="sc-bdnxRM fDmUcm"
       color="#ff3d3d"
       disabled=""
       type="button"
@@ -164,7 +164,7 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="sc-bdfBwQ eREgKm"
+        class="sc-bdnxRM gcGyIp"
         color="#0189e5"
         type="button"
       >
@@ -174,7 +174,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="sc-bdfBwQ eREgKm"
+      class="sc-bdnxRM gcGyIp"
       color="#0189e5"
       type="button"
     >
@@ -241,7 +241,7 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="sc-bdfBwQ hMKfoD"
+        class="sc-bdnxRM dEuXiE"
         color="#013c63"
         type="button"
       >
@@ -251,7 +251,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="sc-bdfBwQ hMKfoD"
+      class="sc-bdnxRM dEuXiE"
       color="#013c63"
       type="button"
     >
@@ -318,7 +318,7 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="sc-bdfBwQ jpZCSI"
+        class="sc-bdnxRM euXfRT"
         color="#013c63"
         type="button"
       >
@@ -328,7 +328,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="sc-bdfBwQ jpZCSI"
+      class="sc-bdnxRM euXfRT"
       color="#013c63"
       type="button"
     >
@@ -395,7 +395,7 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="sc-bdfBwQ jWhDsL"
+        class="sc-bdnxRM bdsqso"
         color="#ff3d3d"
         type="button"
       >
@@ -405,7 +405,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="sc-bdfBwQ jWhDsL"
+      class="sc-bdnxRM bdsqso"
       color="#ff3d3d"
       type="button"
     >

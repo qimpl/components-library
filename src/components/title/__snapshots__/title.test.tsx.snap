@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <h1
-        class="sc-gsTCUz fKAvmk"
+        class="sc-gtsrHT gDYtVS"
         font-size="20px"
       >
         H1 Title
@@ -15,7 +15,7 @@ Object {
   </body>,
   "container": <div>
     <h1
-      class="sc-gsTCUz fKAvmk"
+      class="sc-gtsrHT gDYtVS"
       font-size="20px"
     >
       H1 Title
@@ -81,7 +81,7 @@ Object {
   "baseElement": <body>
     <div>
       <h2
-        class="sc-dlfnbm dHiDOr"
+        class="sc-dlnjwi iFhOeS"
         font-size="18px"
       >
         H2 Title
@@ -90,7 +90,7 @@ Object {
   </body>,
   "container": <div>
     <h2
-      class="sc-dlfnbm dHiDOr"
+      class="sc-dlnjwi iFhOeS"
       font-size="18px"
     >
       H2 Title
@@ -156,7 +156,7 @@ Object {
   "baseElement": <body>
     <div>
       <h3
-        class="sc-hKgILt eXHKDY"
+        class="sc-hKFxyN cGiEdT"
         font-size="16px"
       >
         H3 Title
@@ -165,7 +165,7 @@ Object {
   </body>,
   "container": <div>
     <h3
-      class="sc-hKgILt eXHKDY"
+      class="sc-hKFxyN cGiEdT"
       font-size="16px"
     >
       H3 Title
@@ -231,7 +231,7 @@ Object {
   "baseElement": <body>
     <div>
       <h4
-        class="sc-eCssSg dlfAEB"
+        class="sc-eCApnc dUKKwd"
         font-size="14px"
       >
         H4 Title
@@ -240,7 +240,7 @@ Object {
   </body>,
   "container": <div>
     <h4
-      class="sc-eCssSg dlfAEB"
+      class="sc-eCApnc dUKKwd"
       font-size="14px"
     >
       H4 Title

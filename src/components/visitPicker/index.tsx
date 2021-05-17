@@ -20,6 +20,7 @@ type VisitPickerProps = {
   userBookedVisits: BookedVisit[];
   handleClickVisitSlot: React.ReactEventHandler;
   noAvailabilityMsg: string;
+  startDate?: Date;
 };
 
 type BookedVisit = {
@@ -52,6 +53,25 @@ const VisitPickerContainer = styled.div`
       > h3 {
         grid-column: 2;
       }
+
+      button {
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border-color: ${Theme.colors.darkGray};
+        cursor: pointer;
+        transition: background-color 0.4s ease-in-out;
+
+        &:hover {
+          color: white;
+          background-color: ${Theme.colors.primary};
+        }
+
+        svg {
+          width: 10px;
+          height: 10px;
+        }
+      }
     }
 
     section {
@@ -70,18 +90,12 @@ const VisitPickerContainer = styled.div`
       }
 
       > p {
-        display: grid;
-        grid-column: 2;
-        justify-content: center;
+        position: absolute;
+        left: 35%;
 
-        @media (max-width: 768px) {
-          grid-column: 1;
-          justify-content: flex-end;
-        }
-
-        @media (max-width: 400px) {
-          grid-column: 1;
-          justify-content: center;
+        @media (min-width: 768px) {
+          position: absolute;
+          left: 40%;
         }
       }
     }
@@ -93,15 +107,18 @@ const VisitPicker = ({
   userBookedVisits,
   handleClickVisitSlot,
   noAvailabilityMsg = '',
+  startDate = undefined,
 }: VisitPickerProps): React.ReactElement => {
   const [weekDays, setWeekDays] = useState<WeekDaysAvailabilities[]>([]);
   const [currentWeekDay, setCurrentWeekDay] = useState(0);
 
   useEffect(() => {
     const weekdaysAvailabilities: WeekDaysAvailabilities[] = [];
-    let date = new Date();
+
+    let date = startDate === undefined ? new Date() : startDate;
+
     for (let i = 0; i <= 6; i += 1) {
-      const nextDate = new Date(date.setDate(date.getDate() + 1));
+      const nextDate: Date = new Date(date.setDate(date.getDate() + 1));
       date = nextDate;
 
       const weekdayAvailabilities = userAvailabilities.filter(
@@ -146,7 +163,9 @@ const VisitPicker = ({
                   <ArrowLeft24 />
                 </Button>
               )}
-              <Title variant={TitleVariant.H3}>{new Date(weekDays[currentWeekDay].timestamp).toDateString()}</Title>
+              <Title variant={TitleVariant.H3}>
+                {new Date(weekDays[currentWeekDay].timestamp).toLocaleDateString()}
+              </Title>
               {weekDays[currentWeekDay].order !== 6 && (
                 <Button
                   isSmall
@@ -177,6 +196,10 @@ const VisitPicker = ({
       </section>
     </VisitPickerContainer>
   );
+};
+
+VisitPicker.defaultProps = {
+  startDate: undefined,
 };
 
 export default VisitPicker;
