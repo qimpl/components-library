@@ -6,25 +6,25 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-gsTCUz hcKEln"
+        class="sc-gtsrHT fXFjuR"
       >
         <button
-          class="sc-bdfBwQ hMKfoD"
+          class="sc-bdnxRM dEuXiE"
           color="#013c63"
           type="button"
         >
           open menu
         </button>
         <ul
-          class="sc-dlfnbm djPFfp"
+          class="sc-dlnjwi epeCoM"
         >
           <li
-            class="sc-hKgILt kQsjGI"
+            class="sc-hKFxyN bhsPSn"
           >
             Item 1
           </li>
           <li
-            class="sc-hKgILt kQsjGI"
+            class="sc-hKFxyN bhsPSn"
           >
             <p>
               Item 2
@@ -36,25 +36,25 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-gsTCUz hcKEln"
+      class="sc-gtsrHT fXFjuR"
     >
       <button
-        class="sc-bdfBwQ hMKfoD"
+        class="sc-bdnxRM dEuXiE"
         color="#013c63"
         type="button"
       >
         open menu
       </button>
       <ul
-        class="sc-dlfnbm djPFfp"
+        class="sc-dlnjwi epeCoM"
       >
         <li
-          class="sc-hKgILt kQsjGI"
+          class="sc-hKFxyN bhsPSn"
         >
           Item 1
         </li>
         <li
-          class="sc-hKgILt kQsjGI"
+          class="sc-hKFxyN bhsPSn"
         >
           <p>
             Item 2
@@ -123,27 +123,27 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-gsTCUz hcKEln"
+        class="sc-gtsrHT fXFjuR"
       >
         <button
-          class="sc-bdfBwQ hMKfoD"
+          class="sc-bdnxRM dEuXiE"
           color="#013c63"
           type="button"
         >
           open menu
         </button>
         <ul
-          class="sc-dlfnbm hVfczk"
+          class="sc-dlnjwi jjCIwR"
         >
           <li
-            class="sc-hKgILt kQsjGI"
+            class="sc-hKFxyN bhsPSn"
           >
             <p>
               Item 1
             </p>
           </li>
           <li
-            class="sc-hKgILt kQsjGI"
+            class="sc-hKFxyN bhsPSn"
           >
             <p>
               Item 2
@@ -155,27 +155,27 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-gsTCUz hcKEln"
+      class="sc-gtsrHT fXFjuR"
     >
       <button
-        class="sc-bdfBwQ hMKfoD"
+        class="sc-bdnxRM dEuXiE"
         color="#013c63"
         type="button"
       >
         open menu
       </button>
       <ul
-        class="sc-dlfnbm hVfczk"
+        class="sc-dlnjwi jjCIwR"
       >
         <li
-          class="sc-hKgILt kQsjGI"
+          class="sc-hKFxyN bhsPSn"
         >
           <p>
             Item 1
           </p>
         </li>
         <li
-          class="sc-hKgILt kQsjGI"
+          class="sc-hKFxyN bhsPSn"
         >
           <p>
             Item 2

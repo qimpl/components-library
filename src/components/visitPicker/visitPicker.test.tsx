@@ -24,6 +24,7 @@ test('Visit Picker test', () => {
         userBookedVisits={userBookedVisits}
         noAvailabilityMsg='No slot available for this date'
         handleClickVisitSlot={() => 'button click'}
+        startDate={new Date('2021-04-11')}
       />
     )
   ).toMatchSnapshot();

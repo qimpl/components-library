@@ -6,28 +6,28 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-gKsewC heyJbI"
+        class="sc-gKAaRy jbNfMh"
       >
         <h1
-          class="sc-dlfnbm kjTPbf"
+          class="sc-dlnjwi gYKPDG"
           font-size="20px"
         >
           Custom List Item
         </h1>
         <p
-          class="sc-bdfBwQ eXNXew"
+          class="sc-bdnxRM icgxZr"
           style="color: rgb(1, 60, 99); font-size: 15px; line-height: 21px;"
         >
           List Item 1
         </p>
         <p
-          class="sc-bdfBwQ eXNXew"
+          class="sc-bdnxRM icgxZr"
           style="color: rgb(1, 60, 99); font-size: 15px; line-height: 21px;"
         >
           List Item 2
         </p>
         <p
-          class="sc-bdfBwQ eXNXew"
+          class="sc-bdnxRM icgxZr"
           style="color: rgb(1, 60, 99); font-size: 15px; line-height: 21px;"
         >
           List Item 3
@@ -37,28 +37,28 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-gKsewC heyJbI"
+      class="sc-gKAaRy jbNfMh"
     >
       <h1
-        class="sc-dlfnbm kjTPbf"
+        class="sc-dlnjwi gYKPDG"
         font-size="20px"
       >
         Custom List Item
       </h1>
       <p
-        class="sc-bdfBwQ eXNXew"
+        class="sc-bdnxRM icgxZr"
         style="color: rgb(1, 60, 99); font-size: 15px; line-height: 21px;"
       >
         List Item 1
       </p>
       <p
-        class="sc-bdfBwQ eXNXew"
+        class="sc-bdnxRM icgxZr"
         style="color: rgb(1, 60, 99); font-size: 15px; line-height: 21px;"
       >
         List Item 2
       </p>
       <p
-        class="sc-bdfBwQ eXNXew"
+        class="sc-bdnxRM icgxZr"
         style="color: rgb(1, 60, 99); font-size: 15px; line-height: 21px;"
       >
         List Item 3
