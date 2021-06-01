@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-bdfBwQ kLxXaM"
+        class="sc-bdnxRM bLirfP"
       >
         <label
           for="username"
@@ -23,7 +23,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-bdfBwQ kLxXaM"
+      class="sc-bdnxRM bLirfP"
     >
       <label
         for="username"
@@ -97,7 +97,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-bdfBwQ iRqYDH"
+        class="sc-bdnxRM vFhJc"
       >
         <label
           for="email"
@@ -117,7 +117,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-bdfBwQ iRqYDH"
+      class="sc-bdnxRM vFhJc"
     >
       <label
         for="email"
@@ -194,7 +194,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-bdfBwQ kLxXaM"
+        class="sc-bdnxRM bLirfP"
       >
         <input
           accept="image/png"
@@ -208,7 +208,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-bdfBwQ kLxXaM"
+      class="sc-bdnxRM bLirfP"
     >
       <input
         accept="image/png"
@@ -279,7 +279,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-bdfBwQ kLxXaM"
+        class="sc-bdnxRM bLirfP"
       >
         <input
           id="nolabel"
@@ -291,7 +291,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-bdfBwQ kLxXaM"
+      class="sc-bdnxRM bLirfP"
     >
       <input
         id="nolabel"
@@ -360,7 +360,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-bdfBwQ kLxXaM"
+        class="sc-bdnxRM bLirfP"
       >
         <input
           id="placeholder"
@@ -373,7 +373,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-bdfBwQ kLxXaM"
+      class="sc-bdnxRM bLirfP"
     >
       <input
         id="placeholder"

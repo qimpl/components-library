@@ -6,16 +6,16 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-fubCfw clCOMk"
+        class="sc-fujyAs jUKVZh"
       >
         <h3
-          class="sc-gKsewC ehaiwv"
+          class="sc-gKAaRy JtzLq"
           font-size="16px"
         >
           Business
         </h3>
         <h4
-          class="sc-iBPRYJ ivsBtp"
+          class="sc-iCoGMd hkSkto"
           font-size="14px"
         >
           Sub title
@@ -39,7 +39,7 @@ Object {
               </svg>
             </span>
             <p
-              class="sc-dlfnbm aXoLI"
+              class="sc-dlnjwi qSnYd"
               style="color: rgb(67, 80, 88); font-size: 15px; line-height: 21px;"
             >
               Feature 1
@@ -63,7 +63,7 @@ Object {
               </svg>
             </span>
             <p
-              class="sc-dlfnbm aXoLI"
+              class="sc-dlnjwi qSnYd"
               style="color: rgb(67, 80, 88); font-size: 15px; line-height: 21px;"
             >
               Feature 2
@@ -87,7 +87,7 @@ Object {
               </svg>
             </span>
             <p
-              class="sc-dlfnbm aXoLI"
+              class="sc-dlnjwi qSnYd"
               style="color: rgb(67, 80, 88); font-size: 15px; line-height: 21px;"
             >
               Feature 3
@@ -111,7 +111,7 @@ Object {
               </svg>
             </span>
             <p
-              class="sc-dlfnbm aXoLI"
+              class="sc-dlnjwi qSnYd"
               style="color: rgb(67, 80, 88); font-size: 15px; line-height: 21px;"
             >
               Feature 4
@@ -135,7 +135,7 @@ Object {
               </svg>
             </span>
             <p
-              class="sc-dlfnbm aXoLI"
+              class="sc-dlnjwi qSnYd"
               style="color: rgb(67, 80, 88); font-size: 15px; line-height: 21px;"
             >
               Feature 5
@@ -159,7 +159,7 @@ Object {
               </svg>
             </span>
             <p
-              class="sc-dlfnbm aXoLI"
+              class="sc-dlnjwi qSnYd"
               style="color: rgb(67, 80, 88); font-size: 15px; line-height: 21px;"
             >
               Feature 6
@@ -168,20 +168,20 @@ Object {
         </ul>
         <div>
           <p
-            class="sc-dlfnbm dCIXdj"
+            class="sc-dlnjwi hqYSTK"
             style="color: rgb(1, 60, 99); font-size: 18px; line-height: 24px;"
           >
             15
             € / Mois*
           </p>
           <a
-            class="sc-bdfBwQ cXxgvW"
+            class="sc-bdnxRM gGfAxZ"
             href="#"
             target="_self"
             title="Subscribe"
           >
             <button
-              class="sc-gsTCUz ekCRGD"
+              class="sc-gtsrHT iPNkwx"
               color="#013c63"
               type="button"
             >
@@ -194,16 +194,16 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-fubCfw clCOMk"
+      class="sc-fujyAs jUKVZh"
     >
       <h3
-        class="sc-gKsewC ehaiwv"
+        class="sc-gKAaRy JtzLq"
         font-size="16px"
       >
         Business
       </h3>
       <h4
-        class="sc-iBPRYJ ivsBtp"
+        class="sc-iCoGMd hkSkto"
         font-size="14px"
       >
         Sub title
@@ -227,7 +227,7 @@ Object {
             </svg>
           </span>
           <p
-            class="sc-dlfnbm aXoLI"
+            class="sc-dlnjwi qSnYd"
             style="color: rgb(67, 80, 88); font-size: 15px; line-height: 21px;"
           >
             Feature 1
@@ -251,7 +251,7 @@ Object {
             </svg>
           </span>
           <p
-            class="sc-dlfnbm aXoLI"
+            class="sc-dlnjwi qSnYd"
             style="color: rgb(67, 80, 88); font-size: 15px; line-height: 21px;"
           >
             Feature 2
@@ -275,7 +275,7 @@ Object {
             </svg>
           </span>
           <p
-            class="sc-dlfnbm aXoLI"
+            class="sc-dlnjwi qSnYd"
             style="color: rgb(67, 80, 88); font-size: 15px; line-height: 21px;"
           >
             Feature 3
@@ -299,7 +299,7 @@ Object {
             </svg>
           </span>
           <p
-            class="sc-dlfnbm aXoLI"
+            class="sc-dlnjwi qSnYd"
             style="color: rgb(67, 80, 88); font-size: 15px; line-height: 21px;"
           >
             Feature 4
@@ -323,7 +323,7 @@ Object {
             </svg>
           </span>
           <p
-            class="sc-dlfnbm aXoLI"
+            class="sc-dlnjwi qSnYd"
             style="color: rgb(67, 80, 88); font-size: 15px; line-height: 21px;"
           >
             Feature 5
@@ -347,7 +347,7 @@ Object {
             </svg>
           </span>
           <p
-            class="sc-dlfnbm aXoLI"
+            class="sc-dlnjwi qSnYd"
             style="color: rgb(67, 80, 88); font-size: 15px; line-height: 21px;"
           >
             Feature 6
@@ -356,20 +356,20 @@ Object {
       </ul>
       <div>
         <p
-          class="sc-dlfnbm dCIXdj"
+          class="sc-dlnjwi hqYSTK"
           style="color: rgb(1, 60, 99); font-size: 18px; line-height: 24px;"
         >
           15
           € / Mois*
         </p>
         <a
-          class="sc-bdfBwQ cXxgvW"
+          class="sc-bdnxRM gGfAxZ"
           href="#"
           target="_self"
           title="Subscribe"
         >
           <button
-            class="sc-gsTCUz ekCRGD"
+            class="sc-gtsrHT iPNkwx"
             color="#013c63"
             type="button"
           >

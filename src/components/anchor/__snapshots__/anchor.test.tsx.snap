@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <a
-        class="sc-bdfBwQ eOvpDJ"
+        class="sc-bdnxRM ukEKm"
         href="https://google.com"
         target="_blank"
         title="Go to Google"
@@ -17,7 +17,7 @@ Object {
   </body>,
   "container": <div>
     <a
-      class="sc-bdfBwQ eOvpDJ"
+      class="sc-bdnxRM ukEKm"
       href="https://google.com"
       target="_blank"
       title="Go to Google"
@@ -85,7 +85,7 @@ Object {
   "baseElement": <body>
     <div>
       <a
-        class="sc-bdfBwQ dNmChR"
+        class="sc-bdnxRM dGsbxG"
         href="https://google.com"
         target="_self"
         title="Go to Google"
@@ -96,7 +96,7 @@ Object {
   </body>,
   "container": <div>
     <a
-      class="sc-bdfBwQ dNmChR"
+      class="sc-bdnxRM dGsbxG"
       href="https://google.com"
       target="_self"
       title="Go to Google"
@@ -164,7 +164,7 @@ Object {
   "baseElement": <body>
     <div>
       <a
-        class="sc-bdfBwQ eOvpDJ"
+        class="sc-bdnxRM ukEKm"
         href="https://google.com"
         target="_self"
         title="Go to Google"
@@ -175,7 +175,7 @@ Object {
   </body>,
   "container": <div>
     <a
-      class="sc-bdfBwQ eOvpDJ"
+      class="sc-bdnxRM ukEKm"
       href="https://google.com"
       target="_self"
       title="Go to Google"
@@ -243,7 +243,7 @@ Object {
   "baseElement": <body>
     <div>
       <a
-        class="sc-bdfBwQ cXxgvW"
+        class="sc-bdnxRM gGfAxZ"
         href="#"
         target="_self"
         title="No underline link title"
@@ -254,7 +254,7 @@ Object {
   </body>,
   "container": <div>
     <a
-      class="sc-bdfBwQ cXxgvW"
+      class="sc-bdnxRM gGfAxZ"
       href="#"
       target="_self"
       title="No underline link title"
