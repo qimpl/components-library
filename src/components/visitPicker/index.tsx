@@ -18,7 +18,7 @@ type UserAvailabilities = {
 type VisitPickerProps = {
   userAvailabilities: UserAvailabilities[];
   userBookedVisits: BookedVisit[];
-  handleClickVisitSlot: React.ReactEventHandler;
+  handleClickVisitSlot: (arg0: BookedVisit) => void;
   noAvailabilityMsg: string;
   startDate?: Date;
 };
@@ -39,6 +39,8 @@ const VisitPickerContainer = styled.div`
   flex-direction: column;
   width: 100%;
   min-height: 300px;
+  max-height: 300px;
+  overflow-y: scroll;
   border: 1px solid ${Theme.colors.lightGray};
   border-radius: 30px;
 
@@ -182,7 +184,12 @@ const VisitPicker = ({
                 weekDays[currentWeekDay].dailyAvailabilities.map((availability: string) => (
                   <Button
                     key={`${weekDays[currentWeekDay].timestamp} - ${availability}`}
-                    handleClick={handleClickVisitSlot}
+                    handleClick={() =>
+                      handleClickVisitSlot({
+                        hour: availability,
+                        date: new Date(weekDays[currentWeekDay].timestamp).toLocaleDateString(),
+                      })
+                    }
                   >
                     {availability}
                   </Button>
