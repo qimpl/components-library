@@ -25,7 +25,7 @@ type VisitPickerProps = {
 
 type BookedVisit = {
   hour: string;
-  date: string;
+  date: Date;
 };
 
 type WeekDaysAvailabilities = {
@@ -187,7 +187,7 @@ const VisitPicker = ({
                     handleClick={() =>
                       handleClickVisitSlot({
                         hour: availability,
-                        date: new Date(weekDays[currentWeekDay].timestamp).toLocaleDateString(),
+                        date: new Date(weekDays[currentWeekDay].timestamp),
                       })
                     }
                   >

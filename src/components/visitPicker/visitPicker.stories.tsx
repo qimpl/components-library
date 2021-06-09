@@ -22,8 +22,8 @@ const userAvailabilities = [
 ];
 
 const userBookedVisits = [
-  { hour: '10:00', date: '2021-04-11' },
-  { hour: '14:00', date: '2021-04-11' },
+  { hour: '10:00', date: new Date('2021-04-11') },
+  { hour: '14:00', date: new Date('2021-04-11') },
 ];
 
 export const defaultVisitPicker = Template.bind({});
